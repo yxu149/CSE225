@@ -43,15 +43,15 @@ module top
      ,.q_o(reset_r));
        
   // Your code goes here
-  lcd_controller lcd_ctrl (
-    .fpga_clk_i(), 
-    .fpga_reset_i(), 
-
-    .fpga_buttons_i(), 
+  reg button_reset, button_next, button_prev, button_ok, button_unused; 
+  reg signal_reset; 
+  always_comb begin
+    signal_reset = button_reset || reset_r; 
+  end
   
-    .lcd_data_o(), 
-    .lcd_reset_o(), 
-    .lcd_enable_o()
+  lcd_controller lcd_ctrl (
+    
   ); 
+  
   
 endmodule

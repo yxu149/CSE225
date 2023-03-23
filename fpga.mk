@@ -8,7 +8,7 @@ ICEPROG ?= iceprog
 ICEPACK ?= icepack
 ICETIME ?= icetime
 
-PCF_PATH = ./provided_modules/icebreaker.pcf
+PCF_PATH = ../provided_modules/icebreaker.pcf
 prog: top.bin
 	$(ICEPROG) $<
 
