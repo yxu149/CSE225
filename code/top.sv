@@ -9,7 +9,7 @@ module top
    // async: Not synchronized to clock
    // unsafe: Not De-Bounced
   ,input  [7:2] pmod_1b
-  ,output [0:7] data_o
+  ,output [7:0] data_o
   ,output reset_o
   ,output enable_o
    );
@@ -44,14 +44,28 @@ module top
        
   // Your code goes here
   reg button_reset, button_next, button_prev, button_ok, button_unused; 
-  reg signal_reset; 
-  always_comb begin
-    signal_reset = button_reset || reset_r; 
-  end
+  reg signal_reset, valid_i; 
+  
+  reg  [7:0] data; 
+  wire [7:0] data_i; 
+  assign button_reset = pmod_1b[7]; 
+  assign signal_reset = (button_reset || reset_r); 
   
   lcd_controller lcd_ctrl (
+    .fpga_clk_i(clk_12mhz_i), 
+    .fpga_reset_i(signal_reset), 
     
+    .button_next_i(pmod_1b[4]), 
+    .button_ok_i(pmod_1b[5]), 
+    .button_prev_i(pmod_1b[6]), 
+    
+    .valid_o(valid_i), 
+    
+    .lcd_data_o(data), 
+    .lcd_reset_o(reset_o), 
+    .lcd_enable_o(enable_o)
   ); 
   
+  assign data_o = data_i; 
   
 endmodule

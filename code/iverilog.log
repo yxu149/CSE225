@@ -1,0 +1,4 @@
+testbench.Clock with cycle_time_p          10
+VCD info: dumpfile iverilog.vcd opened for output.
+VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
+Current System Time is: 12:00:45 AM--03/24/2023
