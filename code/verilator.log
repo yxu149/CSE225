@@ -1,2 +1,6 @@
-- testbench.sv:28: Verilog $finish
 TOP.testbench.Clock with cycle_time_p          10
+Initial Block
+  0
+- testbench.sv:35: Verilog $finish
+- testbench.sv:39: Verilog $finish
+- testbench.sv:39: Second verilog $finish, exiting

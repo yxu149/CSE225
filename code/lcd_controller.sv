@@ -27,7 +27,196 @@ module lcd_controller (
 
   reg [3:0] char_index; // 16 chars per line (use auto next)
   reg [0:0] line_index; // 2 lines (line 0 -> line 1)
-
+  int step; 
+  
+  always_ff @(posedge fpga_clk_i) begin
+    step <= step + 1; 
+  end
+  
+  always_ff @(posedge fpga_clk_i) begin
+    case (step) 
+      // step 0-2
+      // lcd display control & turn on
+       0: begin
+        lcd_data <= 8'b00110000;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      // latch it in
+       2: begin
+        lcd_data <= 8'b00110000;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      // open write again
+      // step 3-4 set function 
+      // 5*7, 2 line, 8 bits bus in
+       3: begin 
+        lcd_data <= 8'b00011100;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+       4: begin
+        lcd_data <= 8'b00011100;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0;
+      end
+      // open write, 
+      // step 5-6 entry mode set
+      // write => shift right => ready
+       5: begin
+        lcd_data <= 8'b11100000;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1;  
+      end
+       6: begin 
+        lcd_data <= 8'b11100000;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      // 7-9 lcd.clear
+       7: begin
+        lcd_data <= 8'b10000000;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+       9: begin
+        lcd_data <= 8'b10000000;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      // 10-12 write "H" 
+      10: begin
+        lcd_data <= 8'b01001000;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      11: begin
+        lcd_data <= 8'b01001000;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      12: begin
+        lcd_data <= 8'h65;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      13: begin
+        lcd_data <= 8'h65;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      14: begin
+        lcd_data <= 8'h6C;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      15: begin
+        lcd_data <= 8'h6C;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      16: begin
+        lcd_data <= 8'h6C;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      17: begin
+        lcd_data <= 8'h6C;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      18: begin
+        lcd_data <= 8'h6F;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      19: begin
+        lcd_data <= 8'h6F;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      20: begin
+        lcd_data <= 8'h2C;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      21: begin
+        lcd_data <= 8'h2C;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      22: begin
+        lcd_data <= 8'h20;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      23: begin
+        lcd_data <= 8'h20;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      24: begin
+        lcd_data <= 8'h77;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      25: begin
+        lcd_data <= 8'h77;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      26: begin
+        lcd_data <= 8'h6F;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      27: begin
+        lcd_data <= 8'h6F;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      28: begin
+        lcd_data <= 8'h72;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      29: begin
+        lcd_data <= 8'h72;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      30: begin
+        lcd_data <= 8'h6C; 
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      31: begin
+        lcd_data <= 8'h6C; 
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      32: begin
+        lcd_data <= 8'h64;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b1; 
+      end
+      33: begin
+        lcd_data <= 8'h64;
+        lcd_reset <= 1'b0; 
+        lcd_enable <= 1'b0; 
+      end
+      // hold state when step val is between 
+      // defined key steps
+      default : begin
+        lcd_data <= lcd_data_o; 
+        lcd_reset <= lcd_reset_o; 
+        lcd_enable <= lcd_enable_o; 
+      end
+    endcase 
+  end
+  
+  /*
   // State Def
   always_ff @(posedge fpga_clk_i) begin 
     case (State) 
@@ -37,10 +226,11 @@ module lcd_controller (
         // lcd.begin
 
         // lcd.clear 
-
+        
         // lcd.setCursor 
 
         // lcd.print 
+        
       end 
       PAGE_1 : begin
         // lcd.clear 
@@ -85,7 +275,8 @@ module lcd_controller (
       end
     endcase
   end 
-
+  */
+  /* 
   // State Control
   always_ff @(posedge fpga_clk_i) begin
     if (fpga_reset_i) begin
@@ -152,4 +343,5 @@ module lcd_controller (
       endcase
     end
   end
+  */ 
 endmodule

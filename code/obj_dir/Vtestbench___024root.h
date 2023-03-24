@@ -15,28 +15,27 @@ class Vtestbench___024root final : public VerilatedModule {
 
     // DESIGN SPECIFIC STATE
     CData/*0:0*/ testbench__DOT__clk_i;
-    CData/*0:0*/ testbench__DOT__Top__DOT__button_next;
-    CData/*0:0*/ testbench__DOT__Top__DOT__button_prev;
-    CData/*0:0*/ testbench__DOT__Top__DOT__button_ok;
-    CData/*0:0*/ testbench__DOT__Top__DOT__button_unused;
-    CData/*0:0*/ testbench__DOT__Top__DOT__valid_i;
-    CData/*7:0*/ testbench__DOT__Top__DOT__data_i;
-    CData/*0:0*/ testbench__DOT__Top__DOT__sync_a__DOT__q_r;
-    CData/*0:0*/ testbench__DOT__Top__DOT__sync_b__DOT__q_r;
-    CData/*0:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__lcd_reset;
-    CData/*0:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__lcd_enable;
-    CData/*7:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__lcd_data;
-    CData/*0:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__button_next;
-    CData/*0:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__button_prev;
-    CData/*0:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__button_ok;
-    CData/*3:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__char_index;
-    CData/*0:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__line_index;
+    CData/*0:0*/ testbench__DOT__valid_i;
+    CData/*7:0*/ testbench__DOT__data_i;
+    CData/*0:0*/ testbench__DOT__reset_i;
+    CData/*0:0*/ testbench__DOT__enable_i;
+    CData/*0:0*/ testbench__DOT__lcd_ctrl__DOT__lcd_reset;
+    CData/*0:0*/ testbench__DOT__lcd_ctrl__DOT__lcd_enable;
+    CData/*7:0*/ testbench__DOT__lcd_ctrl__DOT__lcd_data;
+    CData/*0:0*/ testbench__DOT__lcd_ctrl__DOT__button_next;
+    CData/*0:0*/ testbench__DOT__lcd_ctrl__DOT__button_prev;
+    CData/*0:0*/ testbench__DOT__lcd_ctrl__DOT__button_ok;
+    CData/*3:0*/ testbench__DOT__lcd_ctrl__DOT__char_index;
+    CData/*0:0*/ testbench__DOT__lcd_ctrl__DOT__line_index;
     CData/*0:0*/ __Vtrigrprev__TOP__testbench__DOT__clk_i;
     CData/*0:0*/ __VactContinue;
-    IData/*31:0*/ testbench__DOT__Top__DOT__lcd_ctrl__DOT__State;
+    IData/*31:0*/ testbench__DOT__lcd_ctrl__DOT__State;
+    IData/*31:0*/ testbench__DOT__lcd_ctrl__DOT__step;
+    IData/*31:0*/ __VstlIterCount;
     IData/*31:0*/ __VactIterCount;
     VlUnpacked<CData/*0:0*/, 2> __Vm_traceActivity;
     VlDelayScheduler __VdlySched;
+    VlTriggerVec<1> __VstlTriggered;
     VlTriggerVec<2> __VactTriggered;
     VlTriggerVec<2> __VnbaTriggered;
 

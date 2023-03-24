@@ -45,9 +45,6 @@ module top
   // Your code goes here
   reg button_reset, button_next, button_prev, button_ok, button_unused; 
   reg signal_reset, valid_i; 
-  
-  reg  [7:0] data; 
-  wire [7:0] data_i; 
   assign button_reset = pmod_1b[7]; 
   assign signal_reset = (button_reset || reset_r); 
   
@@ -61,11 +58,9 @@ module top
     
     .valid_o(valid_i), 
     
-    .lcd_data_o(data), 
+    .lcd_data_o(data_o), 
     .lcd_reset_o(reset_o), 
     .lcd_enable_o(enable_o)
   ); 
-  
-  assign data_o = data_i; 
   
 endmodule

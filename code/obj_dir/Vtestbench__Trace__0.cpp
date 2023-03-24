@@ -24,10 +24,10 @@ void Vtestbench___024root__trace_chg_sub_0(Vtestbench___024root* vlSelf, Verilat
     uint32_t* const oldp VL_ATTR_UNUSED = bufp->oldp(vlSymsp->__Vm_baseCode + 1);
     // Body
     if (VL_UNLIKELY(vlSelf->__Vm_traceActivity[1U])) {
-        bufp->chgBit(oldp+0,(vlSelf->testbench__DOT__Top__DOT__sync_a__DOT__q_r));
-        bufp->chgBit(oldp+1,((1U & (~ (IData)(vlSelf->testbench__DOT__Top__DOT__sync_a__DOT__q_r)))));
-        bufp->chgBit(oldp+2,(vlSelf->testbench__DOT__Top__DOT__sync_b__DOT__q_r));
-        bufp->chgIData(oldp+3,(vlSelf->testbench__DOT__Top__DOT__lcd_ctrl__DOT__State),32);
+        bufp->chgCData(oldp+0,(vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data),8);
+        bufp->chgBit(oldp+1,(vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset));
+        bufp->chgBit(oldp+2,(vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable));
+        bufp->chgIData(oldp+3,(vlSelf->testbench__DOT__lcd_ctrl__DOT__step),32);
     }
     bufp->chgBit(oldp+4,(vlSelf->testbench__DOT__clk_i));
 }
