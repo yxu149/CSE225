@@ -17,7 +17,6 @@ class Vtestbench___024root final : public VerilatedModule {
     CData/*0:0*/ testbench__DOT__clk_i;
     CData/*0:0*/ testbench__DOT__valid_i;
     CData/*7:0*/ testbench__DOT__data_i;
-    CData/*0:0*/ testbench__DOT__reset_i;
     CData/*0:0*/ testbench__DOT__enable_i;
     CData/*0:0*/ testbench__DOT__lcd_ctrl__DOT__lcd_reset;
     CData/*0:0*/ testbench__DOT__lcd_ctrl__DOT__lcd_enable;

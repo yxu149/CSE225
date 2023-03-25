@@ -24,14 +24,14 @@ Info: constrained 'pmod_1b[7]' to bel 'X17/Y31/io0'
 Info: Packing constants..
 Info: Packing IOs..
 Info: Packing LUT-FFs..
-Info:       88 LCs used as LUT4 only
-Info:       39 LCs used as LUT4 and DFF
+Info:       90 LCs used as LUT4 only
+Info:       40 LCs used as LUT4 and DFF
 Info: Packing non-LUT FFs..
-Info:        3 LCs used as DFF only
+Info:        2 LCs used as DFF only
 Info: Packing carries..
-Info:        0 LCs used as CARRY only
+Info:       61 LCs used as CARRY only
 Info: Packing indirect carry+LUT pairs...
-Info:        0 LUTs merged into carry LCs
+Info:       31 LUTs merged into carry LCs
 Info: Packing RAMs..
 Info: Placing PLLs..
 Info: Packing special functions..
@@ -39,14 +39,14 @@ Info: Packing PLLs..
 Info: Promoting globals..
 Info: promoting clk_12mhz_i$SB_IO_IN (fanout 42)
 Info: Constraining chains...
-Info:        1 LCs used to legalise carry chains.
-Info: Checksum: 0x0c4c2386
+Info:        5 LCs used to legalise carry chains.
+Info: Checksum: 0xf7f70556
 
 Info: Annotating ports with timing budgets for target frequency 12.00 MHz
-Info: Checksum: 0xb07200d2
+Info: Checksum: 0xf7aa34b0
 
 Info: Device utilisation:
-Info: 	         ICESTORM_LC:   133/ 5280     2%
+Info: 	         ICESTORM_LC:   169/ 5280     3%
 Info: 	        ICESTORM_RAM:     0/   30     0%
 Info: 	               SB_IO:    21/   96    21%
 Info: 	               SB_GB:     1/    8    12%
@@ -63,146 +63,360 @@ Info: 	         SB_RGBA_DRV:     0/    1     0%
 Info: 	      ICESTORM_SPRAM:     0/    4     0%
 
 Info: Placed 21 cells based on constraints.
-Info: Creating initial analytic placement for 101 cells, random placement wirelen = 3582.
-Info:     at initial placer iter 0, wirelen = 126
-Info:     at initial placer iter 1, wirelen = 105
-Info:     at initial placer iter 2, wirelen = 105
-Info:     at initial placer iter 3, wirelen = 105
+Info: Creating initial analytic placement for 74 cells, random placement wirelen = 3736.
+Info:     at initial placer iter 0, wirelen = 152
+Info:     at initial placer iter 1, wirelen = 137
+Info:     at initial placer iter 2, wirelen = 138
+Info:     at initial placer iter 3, wirelen = 137
 Info: Running main analytical placer, max placement attempts per cell = 10000.
-Info:     at iteration #1, type ALL: wirelen solved = 105, spread = 474, legal = 497; time = 0.00s
-Info:     at iteration #2, type ALL: wirelen solved = 87, spread = 509, legal = 526; time = 0.00s
-Info:     at iteration #3, type ALL: wirelen solved = 107, spread = 522, legal = 531; time = 0.00s
-Info:     at iteration #4, type ALL: wirelen solved = 92, spread = 541, legal = 567; time = 0.00s
-Info:     at iteration #5, type ALL: wirelen solved = 98, spread = 509, legal = 522; time = 0.00s
-Info:     at iteration #6, type ALL: wirelen solved = 98, spread = 516, legal = 515; time = 0.00s
-Info: HeAP Placer Time: 0.02s
+Info:     at iteration #1, type ALL: wirelen solved = 138, spread = 519, legal = 540; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 117, spread = 491, legal = 596; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 116, spread = 604, legal = 615; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 124, spread = 578, legal = 584; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 167, spread = 429, legal = 512; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 133, spread = 344, legal = 495; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 152, spread = 369, legal = 466; time = 0.00s
+Info:     at iteration #8, type ALL: wirelen solved = 132, spread = 367, legal = 514; time = 0.00s
+Info:     at iteration #9, type ALL: wirelen solved = 132, spread = 367, legal = 464; time = 0.00s
+Info:     at iteration #10, type ALL: wirelen solved = 130, spread = 341, legal = 510; time = 0.00s
+Info:     at iteration #11, type ALL: wirelen solved = 120, spread = 418, legal = 542; time = 0.00s
+Info:     at iteration #12, type ALL: wirelen solved = 132, spread = 422, legal = 507; time = 0.00s
+Info:     at iteration #13, type ALL: wirelen solved = 151, spread = 422, legal = 504; time = 0.00s
+Info:     at iteration #14, type ALL: wirelen solved = 161, spread = 415, legal = 505; time = 0.00s
+Info: HeAP Placer Time: 0.03s
 Info:   of which solving equations: 0.02s
 Info:   of which spreading cells: 0.00s
 Info:   of which strict legalisation: 0.00s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 372, wirelen = 497
-Info:   at iteration #5: temp = 0.000000, timing cost = 338, wirelen = 408
-Info:   at iteration #10: temp = 0.000000, timing cost = 308, wirelen = 347
-Info:   at iteration #15: temp = 0.000000, timing cost = 307, wirelen = 334
-Info:   at iteration #20: temp = 0.000000, timing cost = 268, wirelen = 326
-Info:   at iteration #23: temp = 0.000000, timing cost = 334, wirelen = 319 
-Info: SA placement time 0.03s
+Info:   at iteration #1: temp = 0.000000, timing cost = 270, wirelen = 464
+Info:   at iteration #5: temp = 0.000000, timing cost = 169, wirelen = 389
+Info:   at iteration #10: temp = 0.000000, timing cost = 152, wirelen = 380
+Info:   at iteration #10: temp = 0.000000, timing cost = 150, wirelen = 381 
+Info: SA placement time 0.02s
 
-Info: Max frequency for clock 'clk_12mhz_i$SB_IO_IN_$glb_clk': 39.64 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock 'clk_12mhz_i$SB_IO_IN_$glb_clk': 35.72 MHz (PASS at 12.00 MHz)
 
-Info: Max delay posedge clk_12mhz_i$SB_IO_IN_$glb_clk -> <async>: 7.17 ns
+Info: Max delay posedge clk_12mhz_i$SB_IO_IN_$glb_clk -> <async>: 7.30 ns
 
 Info: Slack histogram:
 Info:  legend: * represents 1 endpoint(s)
 Info:          + represents [1,1) endpoint(s)
-Info: [ 58104,  59167) |************** 
-Info: [ 59167,  60230) |**** 
-Info: [ 60230,  61293) |*** 
-Info: [ 61293,  62356) |** 
-Info: [ 62356,  63419) |***** 
-Info: [ 63419,  64482) |* 
-Info: [ 64482,  65545) |** 
-Info: [ 65545,  66608) |*** 
-Info: [ 66608,  67671) |** 
-Info: [ 67671,  68734) |* 
-Info: [ 68734,  69797) |****** 
-Info: [ 69797,  70860) |****** 
-Info: [ 70860,  71923) |*** 
-Info: [ 71923,  72986) |**** 
-Info: [ 72986,  74049) |*** 
-Info: [ 74049,  75112) |**** 
-Info: [ 75112,  76175) |***** 
-Info: [ 76175,  77238) |**** 
-Info: [ 77238,  78301) |** 
-Info: [ 78301,  79364) |***************************************** 
-Info: Checksum: 0x041bdbcb
+Info: [ 55336,  56538) |* 
+Info: [ 56538,  57740) | 
+Info: [ 57740,  58942) |**** 
+Info: [ 58942,  60144) |************** 
+Info: [ 60144,  61346) |**** 
+Info: [ 61346,  62548) |****** 
+Info: [ 62548,  63750) | 
+Info: [ 63750,  64952) |**** 
+Info: [ 64952,  66154) |****** 
+Info: [ 66154,  67356) |** 
+Info: [ 67356,  68558) |****** 
+Info: [ 68558,  69760) |**** 
+Info: [ 69760,  70962) |**** 
+Info: [ 70962,  72164) |***** 
+Info: [ 72164,  73366) |*** 
+Info: [ 73366,  74568) |***** 
+Info: [ 74568,  75770) |*** 
+Info: [ 75770,  76972) |****** 
+Info: [ 76972,  78174) | 
+Info: [ 78174,  79376) |**************************************** 
+Info: Checksum: 0xfd51a23e
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 448 arcs.
+Info: Routing 497 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:        645 |      163        455 |  163   455 |         0|       0.04       0.04|
+Info:        626 |      111        432 |  111   432 |         0|       0.04       0.04|
 Info: Routing complete.
 Info: Router1 time 0.04s
-Info: Checksum: 0xa3b56b2c
+Info: Checksum: 0xaef25eb7
 
 Info: Critical path report for clock 'clk_12mhz_i$SB_IO_IN_$glb_clk' (posedge -> posedge):
 Info: curr total
-Info:  1.4  1.4  Source lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_6_LC.O
-Info:  1.8  3.2    Net lcd_ctrl.step[20] budget 10.603000 ns (9,3) -> (8,3)
-Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_I0_SB_LUT4_O_3_LC.I0
+Info:  1.4  1.4  Source lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_20_LC.O
+Info:  3.0  4.3    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2[0] budget 0.000000 ns (7,2) -> (4,1)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_19$CARRY.I3
 Info:                Defined in:
 Info:                  top.sv:51.18-64.4
-Info:                  lcd_controller.sv:33.13-33.21
-Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:33.23-33.24
-Info:  1.3  4.4  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_I0_SB_LUT4_O_3_LC.O
-Info:  1.8  6.2    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_I0[0] budget 10.603000 ns (8,3) -> (8,4)
-Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_LC.I0
+Info:                  lcd_controller.sv:30.7-30.11
+Info:  0.9  5.2  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_19$CARRY.O
+Info:  1.8  7.0    Net lcd_ctrl.step_SB_DFF_Q_31_D[1] budget 0.000000 ns (4,1) -> (4,1)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_19$CARRY.I2
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.26-141.35
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:49.21-49.23
+Info:  0.6  7.6  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_19$CARRY.COUT
+Info:  0.0  7.6    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[1] budget 0.000000 ns (4,1) -> (4,1)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_8$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  7.9  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_8$CARRY.COUT
+Info:  0.0  7.9    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[2] budget 0.000000 ns (4,1) -> (4,1)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_6$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  8.1  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_6$CARRY.COUT
+Info:  0.0  8.1    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[3] budget 0.000000 ns (4,1) -> (4,1)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_5$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  8.4  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_5$CARRY.COUT
+Info:  0.0  8.4    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[4] budget 0.000000 ns (4,1) -> (4,1)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_4$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  8.7  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_4$CARRY.COUT
+Info:  0.0  8.7    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[5] budget 0.000000 ns (4,1) -> (4,1)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_3$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  9.0  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_3$CARRY.COUT
+Info:  0.0  9.0    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[6] budget 0.000000 ns (4,1) -> (4,1)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_2$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3  9.3  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_2$CARRY.COUT
+Info:  0.6  9.8    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[7] budget 0.560000 ns (4,1) -> (4,2)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_1$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 10.1  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_1$CARRY.COUT
+Info:  0.0 10.1    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[8] budget 0.000000 ns (4,2) -> (4,2)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 10.4  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO$CARRY.COUT
+Info:  0.0 10.4    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[9] budget 0.000000 ns (4,2) -> (4,2)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_29$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 10.6  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_29$CARRY.COUT
+Info:  0.0 10.6    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[10] budget 0.000000 ns (4,2) -> (4,2)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_28$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 10.9  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_28$CARRY.COUT
+Info:  0.0 10.9    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[11] budget 0.000000 ns (4,2) -> (4,2)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_27$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 11.2  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_27$CARRY.COUT
+Info:  0.0 11.2    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[12] budget 0.000000 ns (4,2) -> (4,2)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_26$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 11.5  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_26$CARRY.COUT
+Info:  0.0 11.5    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[13] budget 0.000000 ns (4,2) -> (4,2)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_25$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 11.8  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_25$CARRY.COUT
+Info:  0.0 11.8    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[14] budget 0.000000 ns (4,2) -> (4,2)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_24$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 12.0  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_24$CARRY.COUT
+Info:  0.6 12.6    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[15] budget 0.560000 ns (4,2) -> (4,3)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_23$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 12.9  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_23$CARRY.COUT
+Info:  0.0 12.9    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[16] budget 0.000000 ns (4,3) -> (4,3)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_22$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 13.1  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_22$CARRY.COUT
+Info:  0.0 13.1    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[17] budget 0.000000 ns (4,3) -> (4,3)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_21$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 13.4  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_21$CARRY.COUT
+Info:  0.0 13.4    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[18] budget 0.000000 ns (4,3) -> (4,3)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_20$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 13.7  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_20$CARRY.COUT
+Info:  0.0 13.7    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[19] budget 0.000000 ns (4,3) -> (4,3)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_18$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 14.0  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_18$CARRY.COUT
+Info:  0.0 14.0    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[20] budget 0.000000 ns (4,3) -> (4,3)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_17$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 14.3  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_17$CARRY.COUT
+Info:  0.0 14.3    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[21] budget 0.000000 ns (4,3) -> (4,3)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_16$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 14.5  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_16$CARRY.COUT
+Info:  0.0 14.5    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[22] budget 0.000000 ns (4,3) -> (4,3)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_15$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 14.8  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_15$CARRY.COUT
+Info:  0.6 15.4    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[23] budget 0.560000 ns (4,3) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_14$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 15.6  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_14$CARRY.COUT
+Info:  0.0 15.6    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[24] budget 0.000000 ns (4,4) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_13$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 15.9  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_13$CARRY.COUT
+Info:  0.0 15.9    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[25] budget 0.000000 ns (4,4) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_12$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 16.2  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_12$CARRY.COUT
+Info:  0.0 16.2    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[26] budget 0.000000 ns (4,4) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_11$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 16.5  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_11$CARRY.COUT
+Info:  0.0 16.5    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[27] budget 0.000000 ns (4,4) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_10$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 16.8  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_10$CARRY.COUT
+Info:  0.0 16.8    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[28] budget 0.000000 ns (4,4) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_9$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 17.0  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_9$CARRY.COUT
+Info:  0.0 17.0    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[29] budget 0.000000 ns (4,4) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_7$CARRY.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 17.3  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_7$CARRY.COUT
+Info:  0.0 17.3    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[30] budget 0.000000 ns (4,4) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_LC.CIN
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22
+Info:  0.3 17.6  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_LC.COUT
+Info:  1.2 18.8    Net $nextpnr_ICESTORM_LC_4$I3 budget 1.220000 ns (4,4) -> (4,5)
+Info:                Sink $nextpnr_ICESTORM_LC_4.I3
+Info:  0.9 19.7  Source $nextpnr_ICESTORM_LC_4.O
+Info:  1.8 21.4    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_I0[31] budget 33.590000 ns (4,5) -> (4,4)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_LC.I0
+Info:                Defined in:
+Info:                  top.sv:51.18-64.4
+Info:                  lcd_controller.sv:141.13-141.22
+Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:37.23-37.25
+Info:  1.3 22.7  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O_LC.O
+Info:  1.8 24.5    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_I2[0] budget 16.795000 ns (4,4) -> (5,5)
+Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_LC.I2
 Info:                Defined in:
 Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3  7.5  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_LC.O
-Info:  3.0 10.4    Net lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1[1] budget 10.603000 ns (8,4) -> (5,3)
-Info:                Sink lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_LC.I2
+Info:  1.2 25.7  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O_SB_LUT4_O_LC.O
+Info:  3.0 28.6    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_I1_O_SB_LUT4_I2_O[0] budget 16.794001 ns (5,5) -> (7,6)
+Info:                Sink lcd_ctrl.lcd_reset_SB_DFF_Q_D_SB_LUT4_O_LC.I0
 Info:                Defined in:
 Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 11.6  Source lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_LC.O
-Info:  1.8 13.4    Net lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0[1] budget 10.603000 ns (5,3) -> (5,4)
-Info:                Sink lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_1_LC.I0
-Info:                Defined in:
-Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3 14.7  Source lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_1_LC.O
-Info:  1.8 16.4    Net lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O[0] budget 10.610000 ns (5,4) -> (5,4)
-Info:                Sink lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_2_LC.I0
-Info:                Defined in:
-Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.3 17.7  Source lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_2_LC.O
-Info:  2.8 20.6    Net lcd_ctrl.lcd_reset_SB_DFFE_Q_D[1] budget 10.610000 ns (5,4) -> (8,4)
-Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_E_SB_LUT4_O_LC.I1
-Info:                Defined in:
-Info:                  /opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22
-Info:  1.2 21.8  Source lcd_ctrl.lcd_enable_SB_DFFE_Q_E_SB_LUT4_O_LC.O
-Info:  3.0 24.8    Net lcd_ctrl.lcd_enable_SB_DFFE_Q_E budget 10.610000 ns (8,4) -> (8,5)
-Info:                Sink lcd_ctrl.lcd_enable_SB_DFFE_Q_DFFLC.CEN
-Info:  0.1 24.9  Setup lcd_ctrl.lcd_enable_SB_DFFE_Q_DFFLC.CEN
-Info: 9.1 ns logic, 15.9 ns routing
+Info:  1.2 29.9  Setup lcd_ctrl.lcd_reset_SB_DFF_Q_D_SB_LUT4_O_LC.I0
+Info: 15.8 ns logic, 14.1 ns routing
 
 Info: Critical path report for cross-domain path 'posedge clk_12mhz_i$SB_IO_IN_$glb_clk' -> '<async>':
 Info: curr total
-Info:  1.4  1.4  Source lcd_ctrl.lcd_reset_SB_DFFE_Q_DFFLC.O
-Info:  5.5  6.8    Net reset_o$SB_IO_OUT budget 81.943001 ns (9,5) -> (9,31)
+Info:  1.4  1.4  Source lcd_ctrl.lcd_reset_SB_DFF_Q_D_SB_LUT4_O_LC.O
+Info:  6.8  8.2    Net reset_o$SB_IO_OUT budget 81.943001 ns (7,6) -> (9,31)
 Info:                Sink reset_o$sb_io.D_OUT_0
 Info:                Defined in:
 Info:                  top.sv:13.11-13.18
-Info: 1.4 ns logic, 5.5 ns routing
+Info: 1.4 ns logic, 6.8 ns routing
 
-Info: Max frequency for clock 'clk_12mhz_i$SB_IO_IN_$glb_clk': 40.10 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock 'clk_12mhz_i$SB_IO_IN_$glb_clk': 33.46 MHz (PASS at 12.00 MHz)
 
-Info: Max delay posedge clk_12mhz_i$SB_IO_IN_$glb_clk -> <async>: 6.84 ns
+Info: Max delay posedge clk_12mhz_i$SB_IO_IN_$glb_clk -> <async>: 8.23 ns
 
 Info: Slack histogram:
 Info:  legend: * represents 1 endpoint(s)
 Info:          + represents [1,1) endpoint(s)
-Info: [ 58397,  59454) |****************** 
-Info: [ 59454,  60511) | 
-Info: [ 60511,  61568) |*** 
-Info: [ 61568,  62625) |** 
-Info: [ 62625,  63682) |****** 
-Info: [ 63682,  64739) | 
-Info: [ 64739,  65796) |* 
-Info: [ 65796,  66853) |***** 
-Info: [ 66853,  67910) |* 
-Info: [ 67910,  68967) |***** 
-Info: [ 68967,  70024) |******** 
-Info: [ 70024,  71081) |** 
-Info: [ 71081,  72138) |**** 
-Info: [ 72138,  73195) |*** 
-Info: [ 73195,  74252) |*** 
-Info: [ 74252,  75309) |**** 
-Info: [ 75309,  76366) |** 
-Info: [ 76366,  77423) |***** 
-Info: [ 77423,  78480) |*** 
-Info: [ 78480,  79537) |**************************************** 
+Info: [ 53450,  54755) |* 
+Info: [ 54755,  56060) | 
+Info: [ 56060,  57365) | 
+Info: [ 57365,  58670) |**************** 
+Info: [ 58670,  59975) |* 
+Info: [ 59975,  61280) |*** 
+Info: [ 61280,  62585) |******** 
+Info: [ 62585,  63890) | 
+Info: [ 63890,  65195) |******** 
+Info: [ 65195,  66500) |** 
+Info: [ 66500,  67805) |******* 
+Info: [ 67805,  69110) |***** 
+Info: [ 69110,  70415) |*** 
+Info: [ 70415,  71720) |***** 
+Info: [ 71720,  73025) |**** 
+Info: [ 73025,  74330) |***** 
+Info: [ 74330,  75635) |*** 
+Info: [ 75635,  76940) |****** 
+Info: [ 76940,  78245) |*** 
+Info: [ 78245,  79550) |************************************* 
 
 Info: Program finished normally.

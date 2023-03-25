@@ -39,58 +39,32 @@ module lcd_controller (
       // lcd display control & turn on
        0: begin
         lcd_data <= 8'b00110000;
-        lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-      // latch it in
-       2: begin
-        lcd_data <= 8'b00110000;
         lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
       end
       // open write again
       // step 3-4 set function 
       // 5*7, 2 line, 8 bits bus in
-       3: begin 
-        lcd_data <= 8'b00011100;
-        lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-       4: begin
+       4: begin 
         lcd_data <= 8'b00011100;
         lcd_reset <= 1'b0; 
-        lcd_enable <= 1'b1;
+        lcd_enable <= 1'b1; 
       end
       // open write, 
       // step 5-6 entry mode set
       // write => shift right => ready
-       5: begin
-        lcd_data <= 8'b11100000;
-        lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1;  
-      end
-       6: begin 
+       6: begin
         lcd_data <= 8'b11100000;
         lcd_reset <= 1'b0; 
-        lcd_enable <= 1'b1; 
+        lcd_enable <= 1'b1;  
       end
       // 7-9 lcd.clear
-       7: begin
-        lcd_data <= 8'b10000000;
-        lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-       9: begin
+       8: begin
         lcd_data <= 8'b10000000;
         lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
       end
       10: begin
-        lcd_data <= 8'b00000001;
-        lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-      11: begin
         lcd_data <= 8'b00000001;
         lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
@@ -101,19 +75,9 @@ module lcd_controller (
         lcd_reset <= 1'b1; 
         lcd_enable <= 1'b1; 
       end
-      21: begin
-        lcd_data <= 8'b01001000;
-        lcd_reset <= 1'b0; 
-        lcd_enable <= 1'b1; 
-      end
       22: begin
         lcd_data <= 8'h65;
         lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-      23: begin
-        lcd_data <= 8'h65;
-        lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
       end
       24: begin
@@ -121,19 +85,9 @@ module lcd_controller (
         lcd_reset <= 1'b1; 
         lcd_enable <= 1'b1; 
       end
-      25: begin
-        lcd_data <= 8'h6C;
-        lcd_reset <= 1'b0; 
-        lcd_enable <= 1'b1; 
-      end
       26: begin
         lcd_data <= 8'h6C;
         lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-      27: begin
-        lcd_data <= 8'h6C;
-        lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
       end
       28: begin
@@ -141,19 +95,9 @@ module lcd_controller (
         lcd_reset <= 1'b1; 
         lcd_enable <= 1'b1; 
       end
-      29: begin
-        lcd_data <= 8'h6F;
-        lcd_reset <= 1'b0; 
-        lcd_enable <= 1'b1; 
-      end
       30: begin
         lcd_data <= 8'h2C;
         lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-      31: begin
-        lcd_data <= 8'h2C;
-        lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
       end
       32: begin
@@ -161,19 +105,9 @@ module lcd_controller (
         lcd_reset <= 1'b1; 
         lcd_enable <= 1'b1; 
       end
-      33: begin
-        lcd_data <= 8'h20;
-        lcd_reset <= 1'b0; 
-        lcd_enable <= 1'b1; 
-      end
       34: begin
         lcd_data <= 8'h77;
         lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-      35: begin
-        lcd_data <= 8'h77;
-        lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
       end
       36: begin
@@ -181,19 +115,9 @@ module lcd_controller (
         lcd_reset <= 1'b1; 
         lcd_enable <= 1'b1; 
       end
-      37: begin
-        lcd_data <= 8'h6F;
-        lcd_reset <= 1'b0; 
-        lcd_enable <= 1'b1; 
-      end
       38: begin
         lcd_data <= 8'h72;
         lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-      39: begin
-        lcd_data <= 8'h72;
-        lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
       end
       40: begin
@@ -201,19 +125,9 @@ module lcd_controller (
         lcd_reset <= 1'b1; 
         lcd_enable <= 1'b1; 
       end
-      41: begin
-        lcd_data <= 8'h6C; 
-        lcd_reset <= 1'b0; 
-        lcd_enable <= 1'b1; 
-      end
       42: begin
         lcd_data <= 8'h64;
         lcd_reset <= 1'b1; 
-        lcd_enable <= 1'b1; 
-      end
-      43: begin
-        lcd_data <= 8'h64;
-        lcd_reset <= 1'b0; 
         lcd_enable <= 1'b1; 
       end
       50: begin
@@ -224,8 +138,13 @@ module lcd_controller (
       // hold state when step val is between 
       // defined key steps
       default : begin
+        if (step >= 0 && step < 20) begin
+          lcd_reset <= 1'b0; 
+        end
+        else begin
+          lcd_reset <= 1'b1; 
+        end
         lcd_data <= lcd_data_o; 
-        lcd_reset <= lcd_reset_o; 
         lcd_enable <= lcd_enable_o; 
       end
     endcase 

@@ -84,7 +84,6 @@ VL_ATTR_COLD void Vtestbench___024root___stl_sequent__TOP__0(Vtestbench___024roo
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtestbench___024root___stl_sequent__TOP__0\n"); );
     // Body
     vlSelf->testbench__DOT__data_i = vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data;
-    vlSelf->testbench__DOT__reset_i = vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset;
     vlSelf->testbench__DOT__enable_i = vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable;
 }
 
@@ -142,7 +141,6 @@ VL_ATTR_COLD void Vtestbench___024root___ctor_var_reset(Vtestbench___024root* vl
     vlSelf->testbench__DOT__clk_i = VL_RAND_RESET_I(1);
     vlSelf->testbench__DOT__valid_i = VL_RAND_RESET_I(1);
     vlSelf->testbench__DOT__data_i = VL_RAND_RESET_I(8);
-    vlSelf->testbench__DOT__reset_i = VL_RAND_RESET_I(1);
     vlSelf->testbench__DOT__enable_i = VL_RAND_RESET_I(1);
     vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset = VL_RAND_RESET_I(1);
     vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable = VL_RAND_RESET_I(1);
