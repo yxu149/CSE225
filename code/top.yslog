@@ -112,8 +112,8 @@ Successfully finished Verilog frontend.
 
 5.3. Executing AST frontend in derive mode using pre-parsed AST for module `\top'.
 Generating RTLIL representation for module `\top'.
-Warning: reg '\button_reset' is assigned in a continuous assignment at top.sv:48.10-48.35.
-Warning: reg '\signal_reset' is assigned in a continuous assignment at top.sv:49.10-49.50.
+Warning: reg '\button_reset' is assigned in a continuous assignment at top.sv:49.10-49.35.
+Warning: reg '\signal_reset' is assigned in a continuous assignment at top.sv:51.10-51.50.
 
 5.3.1. Analyzing design hierarchy..
 Top module:  \top
@@ -1231,6 +1231,6 @@ Found and reported 0 problems.
 5.50. Executing JSON backend.
 
 Warnings: 2 unique messages, 2 total
-End of script. Logfile hash: 87ef0c4680, CPU: user 0.34s system 0.01s, MEM: 25.61 MB peak
+End of script. Logfile hash: d6687762af, CPU: user 0.35s system 0.01s, MEM: 25.61 MB peak
 Yosys 0.25+1 (git sha1 d3216593d, clang 10.0.0-4ubuntu1 -fPIC -Os)
-Time spent: 41% 19x read_verilog (0 sec), 25% 1x abc (0 sec), ...
+Time spent: 39% 19x read_verilog (0 sec), 26% 1x abc (0 sec), ...

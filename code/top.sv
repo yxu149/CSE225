@@ -43,10 +43,13 @@ module top
      ,.q_o(reset_r));
        
   // Your code goes here
+  // for external inputs 
   reg button_reset, button_next, button_prev, button_ok, button_unused; 
   reg signal_reset, valid_i; 
   assign button_reset = pmod_1b[7]; 
+  // for external inputs
   assign signal_reset = (button_reset || reset_r); 
+  // since the reset button is broken
   
   lcd_controller lcd_ctrl (
     .fpga_clk_i(clk_12mhz_i), 
