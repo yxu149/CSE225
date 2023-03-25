@@ -31,7 +31,7 @@ module testbench();
     // their correctness.
     $display("Initial Block");
     $display(data_i); 
-    #400;  
+    #520;  
     $finish();
   end
   

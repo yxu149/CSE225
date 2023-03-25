@@ -21,7 +21,7 @@ VL_INLINE_OPT VlCoroutine Vtestbench___024root___eval_initial__TOP__0(Vtestbench
     vlSymsp->_vm_contextp__->dumpfile(VL_CVT_PACK_STR_NW(4, __Vtemp_h9849538a__0));
     vlSymsp->_traceDumpOpen();
     VL_WRITEF("Initial Block\n%3#\n",8,vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data);
-    co_await vlSelf->__VdlySched.delay(0x61a80U, "testbench.sv", 
+    co_await vlSelf->__VdlySched.delay(0x7ef40U, "testbench.sv", 
                                        34);
     VL_FINISH_MT("testbench.sv", 35, "");
 }

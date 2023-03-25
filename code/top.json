@@ -9667,11 +9667,11 @@
         },
         "reset_o": {
           "direction": "output",
-          "bits": [ "0" ]
+          "bits": [ 21 ]
         },
         "enable_o": {
           "direction": "output",
-          "bits": [ 21 ]
+          "bits": [ 22 ]
         }
       },
       "cells": {
@@ -9683,7 +9683,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9694,10 +9694,10 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 22 ],
-            "E": [ 23 ],
+            "D": [ 23 ],
+            "E": [ 24 ],
             "Q": [ 13 ],
-            "R": [ 24 ]
+            "R": [ 25 ]
           }
         },
         "lcd_ctrl.lcd_data_SB_DFFESR_Q_1": {
@@ -9708,32 +9708,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "R": "input"
-          },
-          "connections": {
-            "C": [ 2 ],
-            "D": [ 25 ],
-            "E": [ 23 ],
-            "Q": [ 14 ],
-            "R": [ 24 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESR_Q_2": {
-          "hide_name": 0,
-          "type": "SB_DFFESR",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9745,12 +9720,12 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 26 ],
-            "E": [ 23 ],
-            "Q": [ 15 ],
-            "R": [ 24 ]
+            "E": [ 24 ],
+            "Q": [ 14 ],
+            "R": [ 25 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESR_Q_3": {
+        "lcd_ctrl.lcd_data_SB_DFFESR_Q_2": {
           "hide_name": 0,
           "type": "SB_DFFESR",
           "parameters": {
@@ -9758,7 +9733,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9770,12 +9745,12 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 27 ],
-            "E": [ 23 ],
-            "Q": [ 16 ],
-            "R": [ 24 ]
+            "E": [ 24 ],
+            "Q": [ 15 ],
+            "R": [ 25 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESR_Q_4": {
+        "lcd_ctrl.lcd_data_SB_DFFESR_Q_3": {
           "hide_name": 0,
           "type": "SB_DFFESR",
           "parameters": {
@@ -9783,7 +9758,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9795,12 +9770,12 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 28 ],
-            "E": [ 23 ],
-            "Q": [ 19 ],
-            "R": [ 24 ]
+            "E": [ 24 ],
+            "Q": [ 16 ],
+            "R": [ 25 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESR_Q_5": {
+        "lcd_ctrl.lcd_data_SB_DFFESR_Q_4": {
           "hide_name": 0,
           "type": "SB_DFFESR",
           "parameters": {
@@ -9808,7 +9783,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -9820,9 +9795,34 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 29 ],
-            "E": [ 23 ],
+            "E": [ 24 ],
+            "Q": [ 19 ],
+            "R": [ 25 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESR_Q_5": {
+          "hide_name": 0,
+          "type": "SB_DFFESR",
+          "parameters": {
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:24.66-24.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 30 ],
+            "E": [ 24 ],
             "Q": [ 20 ],
-            "R": [ 24 ]
+            "R": [ 25 ]
           }
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q": {
@@ -9833,32 +9833,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:25.66-25.119"
-          },
-          "port_directions": {
-            "C": "input",
-            "D": "input",
-            "E": "input",
-            "Q": "output",
-            "S": "input"
-          },
-          "connections": {
-            "C": [ 2 ],
-            "D": [ 30 ],
-            "E": [ 23 ],
-            "Q": [ 17 ],
-            "S": [ 24 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_1": {
-          "hide_name": 0,
-          "type": "SB_DFFESS",
-          "parameters": {
-          },
-          "attributes": {
-            "always_ff": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:25.66-25.119"
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:25.66-25.119"
           },
           "port_directions": {
             "C": "input",
@@ -9870,20 +9845,70 @@
           "connections": {
             "C": [ 2 ],
             "D": [ 31 ],
-            "E": [ 23 ],
+            "E": [ 24 ],
+            "Q": [ 17 ],
+            "S": [ 25 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_1": {
+          "hide_name": 0,
+          "type": "SB_DFFESS",
+          "parameters": {
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:25.66-25.119"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "S": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 32 ],
+            "E": [ 24 ],
             "Q": [ 18 ],
-            "S": [ 24 ]
+            "S": [ 25 ]
           }
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000111111111111"
+            "LUT_INIT": "1111100011111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 33 ],
+            "I1": [ 34 ],
+            "I2": [ 35 ],
+            "I3": [ 36 ],
+            "O": [ 23 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9894,13 +9919,38 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 32 ],
-            "I3": [ 33 ],
-            "O": [ 22 ]
+            "I1": [ 37 ],
+            "I2": [ 38 ],
+            "I3": [ 36 ],
+            "O": [ 27 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_1": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1011111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 39 ],
+            "I1": [ 38 ],
+            "I2": [ 40 ],
+            "I3": [ 41 ],
+            "O": [ 28 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -9920,87 +9970,12 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 34 ],
-            "I3": [ 35 ],
-            "O": [ 25 ]
+            "I2": [ 42 ],
+            "I3": [ 43 ],
+            "O": [ 31 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0111111111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 36 ],
-            "I1": [ 32 ],
-            "I2": [ 37 ],
-            "I3": [ 38 ],
-            "O": [ 26 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0111111111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 39 ],
-            "I1": [ 37 ],
-            "I2": [ 40 ],
-            "I3": [ 41 ],
-            "O": [ 27 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 40 ],
-            "I2": [ 41 ],
-            "I3": [ 42 ],
-            "O": [ 36 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I1_SB_LUT4_O_1": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10020,20 +9995,20 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 43 ],
-            "I3": [ 33 ],
-            "O": [ 37 ]
+            "I2": [ 44 ],
+            "I3": [ 43 ],
+            "O": [ 38 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_4": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1111111011111111"
+            "LUT_INIT": "1100000000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10043,22 +10018,22 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 34 ],
-            "I1": [ 44 ],
-            "I2": [ 45 ],
-            "I3": [ 38 ],
-            "O": [ 30 ]
+            "I0": [ "0" ],
+            "I1": [ 45 ],
+            "I2": [ 46 ],
+            "I3": [ 47 ],
+            "O": [ 41 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_4_I3_SB_LUT4_O": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0001111111111111"
+            "LUT_INIT": "0000000000111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10068,114 +10043,39 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 46 ],
-            "I1": [ 47 ],
+            "I0": [ "0" ],
+            "I1": [ 48 ],
+            "I2": [ 49 ],
+            "I3": [ 50 ],
+            "O": [ 40 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 51 ],
             "I2": [ 48 ],
             "I3": [ 49 ],
-            "O": [ 50 ]
+            "O": [ 52 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_5": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1100111111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 51 ],
-            "I2": [ 52 ],
-            "I3": [ 53 ],
-            "O": [ 31 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1100111111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 51 ],
-            "I2": [ 54 ],
-            "I3": [ 53 ],
-            "O": [ 28 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011110000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 55 ],
-            "I2": [ 56 ],
-            "I3": [ 57 ],
-            "O": [ 51 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6_I1_SB_LUT4_O_I3_SB_LUT4_I2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 57 ],
-            "I3": [ 56 ],
-            "O": [ 58 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6_I1_SB_LUT4_O_I3_SB_LUT4_O": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10193,18 +10093,218 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 61 ],
-            "I3": [ 62 ],
-            "O": [ 57 ]
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 48 ],
+            "I3": [ 55 ],
+            "O": [ 56 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6_I2_SB_LUT4_O": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0011000000000000"
+            "LUT_INIT": "0100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 57 ],
+            "I1": [ 54 ],
+            "I2": [ 53 ],
+            "I3": [ 58 ],
+            "O": [ 59 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 60 ],
+            "I3": [ 61 ],
+            "O": [ 50 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 62 ],
+            "I3": [ 55 ],
+            "O": [ 63 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_I0_SB_LUT4_I0": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0001000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 57 ],
+            "I1": [ 64 ],
+            "I2": [ 53 ],
+            "I3": [ 54 ],
+            "O": [ 39 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_I0_SB_LUT4_I0_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 65 ],
+            "I3": [ 66 ],
+            "O": [ 42 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_I0_SB_LUT4_I0_O_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 67 ],
+            "I3": [ 64 ],
+            "O": [ 66 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011010111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 65 ],
+            "I1": [ 61 ],
+            "I2": [ 67 ],
+            "I3": [ 68 ],
+            "O": [ 57 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 64 ],
+            "I1": [ 67 ],
+            "I2": [ 69 ],
+            "I3": [ 68 ],
+            "O": [ 48 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -10219,10 +10319,85 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 34 ],
-            "I2": [ 63 ],
-            "I3": [ 50 ],
-            "O": [ 54 ]
+            "I1": [ 70 ],
+            "I2": [ 34 ],
+            "I3": [ 56 ],
+            "O": [ 43 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_4": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 37 ],
+            "I2": [ 71 ],
+            "I3": [ 72 ],
+            "O": [ 32 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_5": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 37 ],
+            "I2": [ 71 ],
+            "I3": [ 40 ],
+            "O": [ 29 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 73 ],
+            "I3": [ 74 ],
+            "O": [ 30 ]
           }
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_7": {
@@ -10245,95 +10420,20 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 58 ],
-            "I3": [ 64 ],
-            "O": [ 29 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_7_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1100101011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 47 ],
-            "I1": [ 46 ],
-            "I2": [ 49 ],
-            "I3": [ 65 ],
-            "O": [ 66 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_7_I3_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 67 ],
-            "I1": [ 60 ],
-            "I2": [ 61 ],
-            "I3": [ 59 ],
-            "O": [ 64 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_7_I3_SB_LUT4_O_1_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1110111111110111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 68 ],
-            "I1": [ 55 ],
-            "I2": [ 49 ],
-            "I3": [ 56 ],
-            "O": [ 67 ]
+            "I2": [ 39 ],
+            "I3": [ 42 ],
+            "O": [ 26 ]
           }
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000111100000000"
+            "LUT_INIT": "1000000000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10343,22 +10443,22 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 34 ],
-            "I3": [ 63 ],
-            "O": [ 32 ]
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 75 ],
+            "I3": [ 55 ],
+            "O": [ 35 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3_SB_LUT4_O": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000000000001111"
+            "LUT_INIT": "1110000000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10368,64 +10468,14 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 69 ],
-            "I3": [ 70 ],
-            "O": [ 33 ]
+            "I0": [ 76 ],
+            "I1": [ 77 ],
+            "I2": [ 53 ],
+            "I3": [ 54 ],
+            "O": [ 78 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 55 ],
-            "I2": [ 62 ],
-            "I3": [ 71 ],
-            "O": [ 43 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 49 ],
-            "I3": [ 68 ],
-            "O": [ 62 ]
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I2_SB_LUT4_O_1": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10444,17 +10494,42 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 59 ],
-            "I2": [ 60 ],
-            "I3": [ 72 ],
-            "O": [ 71 ]
+            "I1": [ 58 ],
+            "I2": [ 65 ],
+            "I3": [ 79 ],
+            "O": [ 76 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_E_SB_LUT4_O": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0011111111111111"
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 61 ],
+            "I1": [ 80 ],
+            "I2": [ 68 ],
+            "I3": [ 67 ],
+            "O": [ 77 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011000000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -10469,17 +10544,17 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 73 ],
-            "I2": [ 74 ],
-            "I3": [ 75 ],
-            "O": [ 23 ]
+            "I1": [ 67 ],
+            "I2": [ 68 ],
+            "I3": [ 58 ],
+            "O": [ 60 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_S_SB_LUT4_O": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_I3_O_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0100000000000000"
+            "LUT_INIT": "0000000000000001"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -10493,14 +10568,14 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 39 ],
-            "I2": [ 52 ],
-            "I3": [ 53 ],
-            "O": [ 24 ]
+            "I0": [ 81 ],
+            "I1": [ 82 ],
+            "I2": [ 83 ],
+            "I3": [ 84 ],
+            "O": [ 55 ]
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_S_SB_LUT4_O_I1_SB_LUT4_O": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_I3_O_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10520,9 +10595,159 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 50 ],
-            "I3": [ 38 ],
-            "O": [ 39 ]
+            "I2": [ 53 ],
+            "I3": [ 54 ],
+            "O": [ 85 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_I3_O_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0001000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 67 ],
+            "I1": [ 69 ],
+            "I2": [ 64 ],
+            "I3": [ 68 ],
+            "O": [ 86 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000111100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 64 ],
+            "I3": [ 69 ],
+            "O": [ 58 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000101100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 87 ],
+            "I1": [ 88 ],
+            "I2": [ 39 ],
+            "I3": [ 89 ],
+            "O": [ 36 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_E_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0111111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 91 ],
+            "I2": [ 92 ],
+            "I3": [ 93 ],
+            "O": [ 24 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_S_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 37 ],
+            "I1": [ 71 ],
+            "I2": [ 94 ],
+            "I3": [ 40 ],
+            "O": [ 25 ]
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_S_SB_LUT4_O_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 72 ],
+            "I1": [ 95 ],
+            "I2": [ 74 ],
+            "I3": [ 43 ],
+            "O": [ 94 ]
           }
         },
         "lcd_ctrl.lcd_enable_SB_DFFE_Q": {
@@ -10533,7 +10758,7 @@
           "attributes": {
             "always_ff": "00000000000000000000000000000001",
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-217.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:5.57-5.103"
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:5.57-5.103"
           },
           "port_directions": {
             "C": "input",
@@ -10543,12 +10768,312 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 75 ],
-            "E": [ 76 ],
-            "Q": [ 21 ]
+            "D": [ 96 ],
+            "E": [ 97 ],
+            "Q": [ 22 ]
           }
         },
         "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0111111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 98 ],
+            "I3": [ 99 ],
+            "O": [ 96 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 53 ],
+            "I2": [ 54 ],
+            "I3": [ 55 ],
+            "O": [ 34 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 82 ],
+            "I1": [ 83 ],
+            "I2": [ 84 ],
+            "I3": [ 81 ],
+            "O": [ 65 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 100 ],
+            "I1": [ 101 ],
+            "I2": [ 102 ],
+            "I3": [ 103 ],
+            "O": [ 54 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 104 ],
+            "I1": [ 105 ],
+            "I2": [ 106 ],
+            "I3": [ 107 ],
+            "O": [ 103 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_I0_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 108 ],
+            "I1": [ 109 ],
+            "I2": [ 110 ],
+            "I3": [ 111 ],
+            "O": [ 102 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_I0_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 112 ],
+            "I1": [ 113 ],
+            "I2": [ 114 ],
+            "I3": [ 115 ],
+            "O": [ 101 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_I0_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 116 ],
+            "I1": [ 117 ],
+            "I2": [ 118 ],
+            "I3": [ 119 ],
+            "O": [ 100 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 120 ],
+            "I3": [ 121 ],
+            "O": [ 53 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_2_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 122 ],
+            "I1": [ 123 ],
+            "I2": [ 124 ],
+            "I3": [ 125 ],
+            "O": [ 121 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_2_I2_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 126 ],
+            "I1": [ 127 ],
+            "I2": [ 128 ],
+            "I3": [ 129 ],
+            "O": [ 120 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0001000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 83 ],
+            "I1": [ 84 ],
+            "I2": [ 81 ],
+            "I3": [ 82 ],
+            "O": [ 99 ]
+          }
+        },
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10567,13 +11092,136 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 77 ],
-            "I2": [ 78 ],
+            "I1": [ 69 ],
+            "I2": [ 64 ],
             "I3": [ 79 ],
-            "O": [ 75 ]
+            "O": [ 98 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1": {
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_E_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0111111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 91 ],
+            "I2": [ 92 ],
+            "I3": [ 93 ],
+            "O": [ 97 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q": {
+          "hide_name": 0,
+          "type": "SB_DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:36.3-232.6|/opt/oss-cad-suite/lib/../share/yosys/ice40/ff_map.v:5.57-5.103"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 92 ],
+            "E": [ 130 ],
+            "Q": [ 21 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 131 ],
+            "I1": [ 132 ],
+            "I2": [ 133 ],
+            "I3": [ 134 ],
+            "O": [ 92 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 70 ],
+            "I1": [ 135 ],
+            "I2": [ 136 ],
+            "I3": [ 34 ],
+            "O": [ 93 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I0_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 98 ],
+            "I3": [ 70 ],
+            "O": [ 87 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I0_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10594,111 +11242,11 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ 80 ],
-            "I3": [ 81 ],
-            "O": [ 74 ]
+            "I3": [ 79 ],
+            "O": [ 70 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000011111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 82 ],
-            "I1": [ 83 ],
-            "I2": [ 84 ],
-            "I3": [ 71 ],
-            "O": [ 80 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000001111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 46 ],
-            "I2": [ 47 ],
-            "I3": [ 48 ],
-            "O": [ 81 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_1_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 85 ],
-            "I1": [ 86 ],
-            "I2": [ 87 ],
-            "I3": [ 88 ],
-            "O": [ 89 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_1_I3_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 68 ],
-            "I1": [ 55 ],
-            "I2": [ 49 ],
-            "I3": [ 56 ],
-            "O": [ 90 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_1_I3_SB_LUT4_O_2": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I0_SB_LUT4_O_I2_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10718,16 +11266,41 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 59 ],
-            "I3": [ 60 ],
-            "O": [ 48 ]
+            "I2": [ 64 ],
+            "I3": [ 69 ],
+            "O": [ 80 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_I0": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000001101011111"
+            "LUT_INIT": "0000000000111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 135 ],
+            "I2": [ 34 ],
+            "I3": [ 63 ],
+            "O": [ 74 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0001111100000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -10741,22 +11314,22 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 82 ],
-            "I1": [ 84 ],
-            "I2": [ 71 ],
-            "I3": [ 91 ],
-            "O": [ 41 ]
+            "I0": [ 33 ],
+            "I1": [ 75 ],
+            "I2": [ 34 ],
+            "I3": [ 96 ],
+            "O": [ 95 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_I1": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0001111111111111"
+            "LUT_INIT": "1111000000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10766,14 +11339,14 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
-            "I1": [ 82 ],
-            "I2": [ 48 ],
-            "I3": [ 89 ],
-            "O": [ 42 ]
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 137 ],
+            "I3": [ 80 ],
+            "O": [ 75 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10792,38 +11365,13 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 68 ],
-            "I2": [ 49 ],
-            "I3": [ 92 ],
-            "O": [ 82 ]
+            "I1": [ 64 ],
+            "I2": [ 69 ],
+            "I3": [ 137 ],
+            "O": [ 51 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 93 ],
-            "I3": [ 94 ],
-            "O": [ 91 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I3_SB_LUT4_I2": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10842,46 +11390,21 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 68 ],
-            "I2": [ 94 ],
-            "I3": [ 61 ],
-            "O": [ 47 ]
+            "I1": [ 69 ],
+            "I2": [ 64 ],
+            "I3": [ 137 ],
+            "O": [ 33 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I3_SB_LUT4_I2_O_SB_LUT4_O": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000011101110111"
+            "LUT_INIT": "1100000000000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 90 ],
-            "I1": [ 89 ],
-            "I2": [ 56 ],
-            "I3": [ 72 ],
-            "O": [ 65 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I3_SB_LUT4_I2_O_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10892,13 +11415,38 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 61 ],
-            "I3": [ 95 ],
-            "O": [ 46 ]
+            "I1": [ 53 ],
+            "I2": [ 54 ],
+            "I3": [ 65 ],
+            "O": [ 88 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I3_SB_LUT4_I3": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 53 ],
+            "I2": [ 54 ],
+            "I3": [ 61 ],
+            "O": [ 49 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -10919,111 +11467,11 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ 68 ],
-            "I3": [ 94 ],
-            "O": [ 96 ]
+            "I3": [ 67 ],
+            "O": [ 137 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 56 ],
-            "I3": [ 55 ],
-            "O": [ 94 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 83 ],
-            "I2": [ 84 ],
-            "I3": [ 77 ],
-            "O": [ 63 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I1_O_SB_LUT4_I3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111100000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 71 ],
-            "I3": [ 63 ],
-            "O": [ 52 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I1_O_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 68 ],
-            "I1": [ 55 ],
-            "I2": [ 71 ],
-            "I3": [ 49 ],
-            "O": [ 34 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11041,39 +11489,14 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 83 ],
-            "I3": [ 72 ],
-            "O": [ 44 ]
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 135 ],
+            "I3": [ 61 ],
+            "O": [ 138 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 68 ],
-            "I2": [ 55 ],
-            "I3": [ 56 ],
-            "O": [ 95 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_I3_SB_LUT4_O_1": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_I3_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11091,243 +11514,18 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 88 ],
-            "I1": [ 86 ],
-            "I2": [ 87 ],
-            "I3": [ 85 ],
-            "O": [ 72 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 96 ],
-            "I3": [ 72 ],
-            "O": [ 70 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 72 ],
-            "I3": [ 95 ],
-            "O": [ 69 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 97 ],
-            "I3": [ 72 ],
-            "O": [ 45 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_2_I2_SB_LUT4_I2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 97 ],
-            "I3": [ 61 ],
-            "O": [ 77 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_2_I2_SB_LUT4_I2_O_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 59 ],
-            "I2": [ 60 ],
-            "I3": [ 61 ],
-            "O": [ 84 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_2_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 55 ],
-            "I2": [ 93 ],
-            "I3": [ 56 ],
-            "O": [ 97 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 93 ],
-            "I3": [ 92 ],
-            "O": [ 83 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 93 ],
-            "I2": [ 55 ],
-            "I3": [ 56 ],
-            "O": [ 98 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 85 ],
-            "I1": [ 88 ],
-            "I2": [ 86 ],
-            "I3": [ 87 ],
+            "I0": [ 81 ],
+            "I1": [ 83 ],
+            "I2": [ 84 ],
+            "I3": [ 82 ],
             "O": [ 61 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_1": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "1000000000000000"
+            "LUT_INIT": "0000000100000000"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -11341,14 +11539,14 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 99 ],
-            "I1": [ 100 ],
-            "I2": [ 101 ],
-            "I3": [ 102 ],
-            "O": [ 60 ]
+            "I0": [ 138 ],
+            "I1": [ 78 ],
+            "I2": [ 35 ],
+            "I3": [ 96 ],
+            "O": [ 134 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_1_I0_SB_LUT4_O": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11366,318 +11564,18 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 103 ],
-            "I1": [ 104 ],
-            "I2": [ 105 ],
-            "I3": [ 106 ],
-            "O": [ 102 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_1_I0_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 107 ],
-            "I1": [ 108 ],
-            "I2": [ 109 ],
-            "I3": [ 110 ],
-            "O": [ 101 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_1_I0_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 111 ],
-            "I1": [ 112 ],
-            "I2": [ 113 ],
-            "I3": [ 114 ],
-            "O": [ 100 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_1_I0_SB_LUT4_O_3": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 115 ],
-            "I1": [ 116 ],
-            "I2": [ 117 ],
-            "I3": [ 118 ],
-            "O": [ 99 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 119 ],
-            "I3": [ 120 ],
-            "O": [ 59 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_2_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 121 ],
-            "I1": [ 122 ],
-            "I2": [ 123 ],
-            "I3": [ 124 ],
-            "O": [ 120 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_2_I2_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 125 ],
-            "I1": [ 126 ],
-            "I2": [ 127 ],
-            "I3": [ 128 ],
-            "O": [ 119 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1111000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 68 ],
-            "I3": [ 49 ],
-            "O": [ 93 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 58 ],
-            "I2": [ 42 ],
-            "I3": [ 41 ],
-            "O": [ 73 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000001111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 66 ],
-            "I3": [ 64 ],
-            "O": [ 78 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0011001100001111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ 57 ],
-            "I2": [ 129 ],
-            "I3": [ 92 ],
-            "O": [ 79 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_I2": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000001111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 129 ],
-            "I3": [ 130 ],
-            "O": [ 40 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_I2_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 131 ],
-            "I1": [ 60 ],
-            "I2": [ 72 ],
+            "I0": [ 63 ],
+            "I1": [ 56 ],
+            "I2": [ 50 ],
             "I3": [ 59 ],
-            "O": [ 130 ]
+            "O": [ 132 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_I2_I3_SB_LUT4_O_I0_SB_LUT4_O": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0111111011111111"
+            "LUT_INIT": "0000000000000111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -11691,14 +11589,39 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 68 ],
-            "I1": [ 55 ],
-            "I2": [ 49 ],
-            "I3": [ 56 ],
+            "I0": [ 139 ],
+            "I1": [ 53 ],
+            "I2": [ 140 ],
+            "I3": [ 141 ],
             "O": [ 131 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_I2_O_SB_LUT4_I0": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I0_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1110000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 98 ],
+            "I1": [ 86 ],
+            "I2": [ 55 ],
+            "I3": [ 54 ],
+            "O": [ 139 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I0_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11716,64 +11639,14 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 40 ],
-            "I1": [ 41 ],
-            "I2": [ 42 ],
-            "I3": [ 35 ],
-            "O": [ 53 ]
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 75 ],
+            "I3": [ 65 ],
+            "O": [ 141 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_I2_O_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 44 ],
-            "I1": [ 45 ],
-            "I2": [ 69 ],
-            "I3": [ 70 ],
-            "O": [ 35 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "1000000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 98 ],
-            "I3": [ 61 ],
-            "O": [ 129 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_I1": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_I3": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11792,38 +11665,13 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 92 ],
-            "I2": [ 57 ],
-            "I3": [ 132 ],
-            "O": [ 38 ]
+            "I1": [ 51 ],
+            "I2": [ 49 ],
+            "I3": [ 140 ],
+            "O": [ 47 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_I1_I3_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0100000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 49 ],
-            "I1": [ 60 ],
-            "I2": [ 46 ],
-            "I3": [ 59 ],
-            "O": [ 132 ]
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_O": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -11843,16 +11691,166 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 55 ],
-            "I3": [ 56 ],
-            "O": [ 92 ]
+            "I2": [ 142 ],
+            "I3": [ 143 ],
+            "O": [ 46 ]
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_E_SB_LUT4_O": {
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0011111111111111"
+            "LUT_INIT": "0000011101110111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 88 ],
+            "I1": [ 51 ],
+            "I2": [ 49 ],
+            "I3": [ 33 ],
+            "O": [ 45 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 62 ],
+            "I3": [ 61 ],
+            "O": [ 140 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_O_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1111000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 58 ],
+            "I3": [ 137 ],
+            "O": [ 62 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 69 ],
+            "I1": [ 42 ],
+            "I2": [ 142 ],
+            "I3": [ 143 ],
+            "O": [ 133 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_2_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 75 ],
+            "I3": [ 61 ],
+            "O": [ 143 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_2_I2_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 62 ],
+            "I3": [ 65 ],
+            "O": [ 142 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
@@ -11867,10 +11865,435 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 73 ],
-            "I2": [ 74 ],
-            "I3": [ 75 ],
-            "O": [ 76 ]
+            "I1": [ 86 ],
+            "I2": [ 49 ],
+            "I3": [ 138 ],
+            "O": [ 89 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 26 ],
+            "I2": [ 73 ],
+            "I3": [ 89 ],
+            "O": [ 71 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 45 ],
+            "I1": [ 46 ],
+            "I2": [ 47 ],
+            "I3": [ 144 ],
+            "O": [ 37 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 141 ],
+            "I3": [ 145 ],
+            "O": [ 144 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0001111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 86 ],
+            "I1": [ 60 ],
+            "I2": [ 85 ],
+            "I3": [ 55 ],
+            "O": [ 73 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0011000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 67 ],
+            "I2": [ 68 ],
+            "I3": [ 80 ],
+            "O": [ 135 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_I2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 136 ],
+            "I3": [ 65 ],
+            "O": [ 146 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_I2_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 147 ],
+            "I3": [ 64 ],
+            "O": [ 44 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_I2_O_SB_LUT4_O_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1100000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 61 ],
+            "I2": [ 68 ],
+            "I3": [ 67 ],
+            "O": [ 147 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 64 ],
+            "I2": [ 69 ],
+            "I3": [ 79 ],
+            "O": [ 136 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000001111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:17.34-18.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ 68 ],
+            "I3": [ 67 ],
+            "O": [ 79 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_2": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 45 ],
+            "I1": [ 148 ],
+            "I2": [ 149 ],
+            "I3": [ 52 ],
+            "O": [ 91 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_2_I1_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000011101110111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 33 ],
+            "I1": [ 34 ],
+            "I2": [ 49 ],
+            "I3": [ 86 ],
+            "O": [ 149 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_2_I1_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000001111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 55 ],
+            "I1": [ 85 ],
+            "I2": [ 60 ],
+            "I3": [ 145 ],
+            "O": [ 148 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_2_I1_SB_LUT4_O_1_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "1000000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 53 ],
+            "I1": [ 54 ],
+            "I2": [ 33 ],
+            "I3": [ 65 ],
+            "O": [ 145 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000001100000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 39 ],
+            "I2": [ 42 ],
+            "I3": [ 72 ],
+            "O": [ 90 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_3_I3_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000011"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:22.34-23.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ 44 ],
+            "I2": [ 146 ],
+            "I3": [ 78 ],
+            "O": [ 72 ]
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_E_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0111111111111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 90 ],
+            "I1": [ 91 ],
+            "I2": [ 92 ],
+            "I3": [ 93 ],
+            "O": [ 130 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_CI": {
@@ -11888,10 +12311,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 56 ],
-            "CO": [ 133 ],
+            "CI": [ 69 ],
+            "CO": [ 150 ],
             "I0": [ "0" ],
-            "I1": [ 55 ]
+            "I1": [ 64 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1": {
@@ -11909,10 +12332,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 134 ],
-            "CO": [ 135 ],
+            "CI": [ 151 ],
+            "CO": [ 152 ],
             "I0": [ "0" ],
-            "I1": [ 122 ]
+            "I1": [ 123 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_1": {
@@ -11930,10 +12353,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 136 ],
-            "CO": [ 134 ],
+            "CI": [ 153 ],
+            "CO": [ 151 ],
             "I0": [ "0" ],
-            "I1": [ 121 ]
+            "I1": [ 122 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_10": {
@@ -11951,10 +12374,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 137 ],
-            "CO": [ 138 ],
+            "CI": [ 154 ],
+            "CO": [ 155 ],
             "I0": [ "0" ],
-            "I1": [ 107 ]
+            "I1": [ 104 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_11": {
@@ -11972,10 +12395,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 139 ],
-            "CO": [ 137 ],
+            "CI": [ 156 ],
+            "CO": [ 154 ],
             "I0": [ "0" ],
-            "I1": [ 106 ]
+            "I1": [ 111 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_12": {
@@ -11993,10 +12416,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 140 ],
-            "CO": [ 139 ],
+            "CI": [ 157 ],
+            "CO": [ 156 ],
             "I0": [ "0" ],
-            "I1": [ 105 ]
+            "I1": [ 110 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_13": {
@@ -12014,10 +12437,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 141 ],
-            "CO": [ 140 ],
+            "CI": [ 158 ],
+            "CO": [ 157 ],
             "I0": [ "0" ],
-            "I1": [ 104 ]
+            "I1": [ 109 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_14": {
@@ -12035,10 +12458,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 142 ],
-            "CO": [ 141 ],
+            "CI": [ 159 ],
+            "CO": [ 158 ],
             "I0": [ "0" ],
-            "I1": [ 103 ]
+            "I1": [ 108 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_15": {
@@ -12056,10 +12479,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 143 ],
-            "CO": [ 142 ],
+            "CI": [ 160 ],
+            "CO": [ 159 ],
             "I0": [ "0" ],
-            "I1": [ 118 ]
+            "I1": [ 119 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_16": {
@@ -12077,10 +12500,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 144 ],
-            "CO": [ 143 ],
+            "CI": [ 161 ],
+            "CO": [ 160 ],
             "I0": [ "0" ],
-            "I1": [ 117 ]
+            "I1": [ 118 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_17": {
@@ -12098,10 +12521,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 145 ],
-            "CO": [ 144 ],
+            "CI": [ 162 ],
+            "CO": [ 161 ],
             "I0": [ "0" ],
-            "I1": [ 114 ]
+            "I1": [ 117 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_18": {
@@ -12119,10 +12542,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 146 ],
-            "CO": [ 145 ],
+            "CI": [ 163 ],
+            "CO": [ 162 ],
             "I0": [ "0" ],
-            "I1": [ 113 ]
+            "I1": [ 116 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_19": {
@@ -12140,10 +12563,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 147 ],
-            "CO": [ 146 ],
+            "CI": [ 164 ],
+            "CO": [ 163 ],
             "I0": [ "0" ],
-            "I1": [ 112 ]
+            "I1": [ 115 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_2": {
@@ -12161,10 +12584,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 148 ],
-            "CO": [ 136 ],
+            "CI": [ 165 ],
+            "CO": [ 153 ],
             "I0": [ "0" ],
-            "I1": [ 87 ]
+            "I1": [ 84 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_20": {
@@ -12182,10 +12605,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 149 ],
-            "CO": [ 147 ],
+            "CI": [ 166 ],
+            "CO": [ 164 ],
             "I0": [ "0" ],
-            "I1": [ 111 ]
+            "I1": [ 114 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_21": {
@@ -12203,10 +12626,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 150 ],
-            "CO": [ 149 ],
+            "CI": [ 167 ],
+            "CO": [ 166 ],
             "I0": [ "0" ],
-            "I1": [ 128 ]
+            "I1": [ 113 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_22": {
@@ -12224,10 +12647,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 151 ],
-            "CO": [ 150 ],
+            "CI": [ 168 ],
+            "CO": [ 167 ],
             "I0": [ "0" ],
-            "I1": [ 127 ]
+            "I1": [ 112 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_23": {
@@ -12245,10 +12668,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 152 ],
-            "CO": [ 151 ],
+            "CI": [ 169 ],
+            "CO": [ 168 ],
             "I0": [ "0" ],
-            "I1": [ 126 ]
+            "I1": [ 129 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_24": {
@@ -12266,10 +12689,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 153 ],
-            "CO": [ 152 ],
+            "CI": [ 170 ],
+            "CO": [ 169 ],
             "I0": [ "0" ],
-            "I1": [ 125 ]
+            "I1": [ 128 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_25": {
@@ -12287,10 +12710,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 154 ],
-            "CO": [ 153 ],
+            "CI": [ 171 ],
+            "CO": [ 170 ],
             "I0": [ "0" ],
-            "I1": [ 116 ]
+            "I1": [ 127 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_26": {
@@ -12308,10 +12731,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 155 ],
-            "CO": [ 154 ],
+            "CI": [ 172 ],
+            "CO": [ 171 ],
             "I0": [ "0" ],
-            "I1": [ 115 ]
+            "I1": [ 126 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_27": {
@@ -12329,10 +12752,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 156 ],
-            "CO": [ 155 ],
+            "CI": [ 173 ],
+            "CO": [ 172 ],
             "I0": [ "0" ],
-            "I1": [ 124 ]
+            "I1": [ 125 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_28": {
@@ -12350,10 +12773,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 135 ],
-            "CO": [ 156 ],
+            "CI": [ 152 ],
+            "CO": [ 173 ],
             "I0": [ "0" ],
-            "I1": [ 123 ]
+            "I1": [ 124 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_3": {
@@ -12371,10 +12794,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 157 ],
-            "CO": [ 148 ],
+            "CI": [ 174 ],
+            "CO": [ 165 ],
             "I0": [ "0" ],
-            "I1": [ 86 ]
+            "I1": [ 83 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_4": {
@@ -12392,10 +12815,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 158 ],
-            "CO": [ 157 ],
+            "CI": [ 175 ],
+            "CO": [ 174 ],
             "I0": [ "0" ],
-            "I1": [ 88 ]
+            "I1": [ 81 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_5": {
@@ -12413,10 +12836,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 159 ],
-            "CO": [ 158 ],
+            "CI": [ 176 ],
+            "CO": [ 175 ],
             "I0": [ "0" ],
-            "I1": [ 85 ]
+            "I1": [ 82 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_6": {
@@ -12434,10 +12857,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 160 ],
-            "CO": [ 159 ],
+            "CI": [ 177 ],
+            "CO": [ 176 ],
             "I0": [ "0" ],
-            "I1": [ 49 ]
+            "I1": [ 67 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_7": {
@@ -12455,10 +12878,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 161 ],
-            "CO": [ 162 ],
+            "CI": [ 178 ],
+            "CO": [ 179 ],
             "I0": [ "0" ],
-            "I1": [ 109 ]
+            "I1": [ 106 ]
           }
         },
         "lcd_ctrl.step_SB_CARRY_I1_8": {
@@ -12476,8 +12899,8 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 133 ],
-            "CO": [ 160 ],
+            "CI": [ 150 ],
+            "CO": [ 177 ],
             "I0": [ "0" ],
             "I1": [ 68 ]
           }
@@ -12497,10 +12920,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 138 ],
-            "CO": [ 161 ],
+            "CI": [ 155 ],
+            "CO": [ 178 ],
             "I0": [ "0" ],
-            "I1": [ 108 ]
+            "I1": [ 105 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q": {
@@ -12520,8 +12943,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 163 ],
-            "Q": [ 110 ]
+            "D": [ 180 ],
+            "Q": [ 107 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_1": {
@@ -12541,8 +12964,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 164 ],
-            "Q": [ 109 ]
+            "D": [ 181 ],
+            "Q": [ 106 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_10": {
@@ -12562,8 +12985,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 165 ],
-            "Q": [ 114 ]
+            "D": [ 182 ],
+            "Q": [ 117 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_11": {
@@ -12583,8 +13006,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 166 ],
-            "Q": [ 113 ]
+            "D": [ 183 ],
+            "Q": [ 116 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_12": {
@@ -12604,8 +13027,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 167 ],
-            "Q": [ 112 ]
+            "D": [ 184 ],
+            "Q": [ 115 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_13": {
@@ -12625,8 +13048,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 168 ],
-            "Q": [ 111 ]
+            "D": [ 185 ],
+            "Q": [ 114 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_14": {
@@ -12646,8 +13069,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 169 ],
-            "Q": [ 128 ]
+            "D": [ 186 ],
+            "Q": [ 113 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_15": {
@@ -12667,8 +13090,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 170 ],
-            "Q": [ 127 ]
+            "D": [ 187 ],
+            "Q": [ 112 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_16": {
@@ -12688,8 +13111,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 171 ],
-            "Q": [ 126 ]
+            "D": [ 188 ],
+            "Q": [ 129 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_17": {
@@ -12709,8 +13132,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 172 ],
-            "Q": [ 125 ]
+            "D": [ 189 ],
+            "Q": [ 128 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_18": {
@@ -12730,8 +13153,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 173 ],
-            "Q": [ 116 ]
+            "D": [ 190 ],
+            "Q": [ 127 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_19": {
@@ -12751,8 +13174,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 174 ],
-            "Q": [ 115 ]
+            "D": [ 191 ],
+            "Q": [ 126 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_2": {
@@ -12772,8 +13195,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 175 ],
-            "Q": [ 108 ]
+            "D": [ 192 ],
+            "Q": [ 105 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_20": {
@@ -12793,8 +13216,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 176 ],
-            "Q": [ 124 ]
+            "D": [ 193 ],
+            "Q": [ 125 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_21": {
@@ -12814,8 +13237,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 177 ],
-            "Q": [ 123 ]
+            "D": [ 194 ],
+            "Q": [ 124 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_22": {
@@ -12835,8 +13258,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 178 ],
-            "Q": [ 122 ]
+            "D": [ 195 ],
+            "Q": [ 123 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_23": {
@@ -12856,8 +13279,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 179 ],
-            "Q": [ 121 ]
+            "D": [ 196 ],
+            "Q": [ 122 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_24": {
@@ -12877,8 +13300,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 180 ],
-            "Q": [ 87 ]
+            "D": [ 197 ],
+            "Q": [ 84 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_25": {
@@ -12898,8 +13321,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 181 ],
-            "Q": [ 86 ]
+            "D": [ 198 ],
+            "Q": [ 83 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_26": {
@@ -12919,8 +13342,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 182 ],
-            "Q": [ 88 ]
+            "D": [ 199 ],
+            "Q": [ 81 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_27": {
@@ -12940,8 +13363,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 183 ],
-            "Q": [ 85 ]
+            "D": [ 200 ],
+            "Q": [ 82 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_28": {
@@ -12961,8 +13384,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 184 ],
-            "Q": [ 49 ]
+            "D": [ 201 ],
+            "Q": [ 67 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_29": {
@@ -12982,7 +13405,7 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 185 ],
+            "D": [ 202 ],
             "Q": [ 68 ]
           }
         },
@@ -13003,8 +13426,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 186 ],
-            "Q": [ 107 ]
+            "D": [ 203 ],
+            "Q": [ 104 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_30": {
@@ -13024,8 +13447,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 187 ],
-            "Q": [ 55 ]
+            "D": [ 204 ],
+            "Q": [ 64 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_31": {
@@ -13045,8 +13468,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 188 ],
-            "Q": [ 56 ]
+            "D": [ 205 ],
+            "Q": [ 69 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_31_D_SB_LUT4_O": {
@@ -13070,8 +13493,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 56 ],
-            "O": [ 188 ]
+            "I3": [ 69 ],
+            "O": [ 205 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_4": {
@@ -13091,8 +13514,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 189 ],
-            "Q": [ 106 ]
+            "D": [ 206 ],
+            "Q": [ 111 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_5": {
@@ -13112,8 +13535,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 190 ],
-            "Q": [ 105 ]
+            "D": [ 207 ],
+            "Q": [ 110 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_6": {
@@ -13133,8 +13556,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 191 ],
-            "Q": [ 104 ]
+            "D": [ 208 ],
+            "Q": [ 109 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_7": {
@@ -13154,8 +13577,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 192 ],
-            "Q": [ 103 ]
+            "D": [ 209 ],
+            "Q": [ 108 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_8": {
@@ -13175,8 +13598,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 193 ],
-            "Q": [ 118 ]
+            "D": [ 210 ],
+            "Q": [ 119 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_9": {
@@ -13196,8 +13619,8 @@
           },
           "connections": {
             "C": [ 2 ],
-            "D": [ 194 ],
-            "Q": [ 117 ]
+            "D": [ 211 ],
+            "Q": [ 118 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O": {
@@ -13220,9 +13643,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 123 ],
-            "I3": [ 135 ],
-            "O": [ 177 ]
+            "I2": [ 110 ],
+            "I3": [ 157 ],
+            "O": [ 207 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_1": {
@@ -13245,9 +13668,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 122 ],
-            "I3": [ 134 ],
-            "O": [ 178 ]
+            "I2": [ 109 ],
+            "I3": [ 158 ],
+            "O": [ 208 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_10": {
@@ -13270,9 +13693,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 68 ],
-            "I3": [ 133 ],
-            "O": [ 185 ]
+            "I2": [ 113 ],
+            "I3": [ 167 ],
+            "O": [ 186 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_11": {
@@ -13295,9 +13718,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 108 ],
-            "I3": [ 138 ],
-            "O": [ 175 ]
+            "I2": [ 112 ],
+            "I3": [ 168 ],
+            "O": [ 187 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_12": {
@@ -13320,9 +13743,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 107 ],
-            "I3": [ 137 ],
-            "O": [ 186 ]
+            "I2": [ 129 ],
+            "I3": [ 169 ],
+            "O": [ 188 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_13": {
@@ -13345,8 +13768,8 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 106 ],
-            "I3": [ 139 ],
+            "I2": [ 128 ],
+            "I3": [ 170 ],
             "O": [ 189 ]
           }
         },
@@ -13370,8 +13793,8 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 105 ],
-            "I3": [ 140 ],
+            "I2": [ 127 ],
+            "I3": [ 171 ],
             "O": [ 190 ]
           }
         },
@@ -13395,8 +13818,8 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 104 ],
-            "I3": [ 141 ],
+            "I2": [ 126 ],
+            "I3": [ 172 ],
             "O": [ 191 ]
           }
         },
@@ -13420,9 +13843,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 103 ],
-            "I3": [ 142 ],
-            "O": [ 192 ]
+            "I2": [ 125 ],
+            "I3": [ 173 ],
+            "O": [ 193 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_17": {
@@ -13445,9 +13868,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 118 ],
-            "I3": [ 143 ],
-            "O": [ 193 ]
+            "I2": [ 124 ],
+            "I3": [ 152 ],
+            "O": [ 194 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_18": {
@@ -13470,9 +13893,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 117 ],
-            "I3": [ 144 ],
-            "O": [ 194 ]
+            "I2": [ 123 ],
+            "I3": [ 151 ],
+            "O": [ 195 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_19": {
@@ -13495,9 +13918,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 114 ],
-            "I3": [ 145 ],
-            "O": [ 165 ]
+            "I2": [ 122 ],
+            "I3": [ 153 ],
+            "O": [ 196 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_2": {
@@ -13520,9 +13943,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 121 ],
-            "I3": [ 136 ],
-            "O": [ 179 ]
+            "I2": [ 108 ],
+            "I3": [ 159 ],
+            "O": [ 209 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_20": {
@@ -13545,9 +13968,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 113 ],
-            "I3": [ 146 ],
-            "O": [ 166 ]
+            "I2": [ 84 ],
+            "I3": [ 165 ],
+            "O": [ 197 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_21": {
@@ -13570,9 +13993,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 55 ],
-            "I3": [ 56 ],
-            "O": [ 187 ]
+            "I2": [ 83 ],
+            "I3": [ 174 ],
+            "O": [ 198 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_22": {
@@ -13595,9 +14018,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 112 ],
-            "I3": [ 147 ],
-            "O": [ 167 ]
+            "I2": [ 81 ],
+            "I3": [ 175 ],
+            "O": [ 199 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_23": {
@@ -13620,9 +14043,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 111 ],
-            "I3": [ 149 ],
-            "O": [ 168 ]
+            "I2": [ 82 ],
+            "I3": [ 176 ],
+            "O": [ 200 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_24": {
@@ -13645,9 +14068,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 128 ],
-            "I3": [ 150 ],
-            "O": [ 169 ]
+            "I2": [ 67 ],
+            "I3": [ 177 ],
+            "O": [ 201 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_25": {
@@ -13670,9 +14093,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 127 ],
-            "I3": [ 151 ],
-            "O": [ 170 ]
+            "I2": [ 107 ],
+            "I3": [ 179 ],
+            "O": [ 180 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_26": {
@@ -13695,9 +14118,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 126 ],
-            "I3": [ 152 ],
-            "O": [ 171 ]
+            "I2": [ 106 ],
+            "I3": [ 178 ],
+            "O": [ 181 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_27": {
@@ -13720,9 +14143,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 125 ],
-            "I3": [ 153 ],
-            "O": [ 172 ]
+            "I2": [ 68 ],
+            "I3": [ 150 ],
+            "O": [ 202 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_28": {
@@ -13745,9 +14168,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 116 ],
-            "I3": [ 154 ],
-            "O": [ 173 ]
+            "I2": [ 105 ],
+            "I3": [ 155 ],
+            "O": [ 192 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_29": {
@@ -13770,9 +14193,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 115 ],
-            "I3": [ 155 ],
-            "O": [ 174 ]
+            "I2": [ 104 ],
+            "I3": [ 154 ],
+            "O": [ 203 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_3": {
@@ -13795,9 +14218,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 87 ],
-            "I3": [ 148 ],
-            "O": [ 180 ]
+            "I2": [ 119 ],
+            "I3": [ 160 ],
+            "O": [ 210 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_30": {
@@ -13820,9 +14243,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 124 ],
+            "I2": [ 111 ],
             "I3": [ 156 ],
-            "O": [ 176 ]
+            "O": [ 206 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_4": {
@@ -13845,9 +14268,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 86 ],
-            "I3": [ 157 ],
-            "O": [ 181 ]
+            "I2": [ 118 ],
+            "I3": [ 161 ],
+            "O": [ 211 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_5": {
@@ -13870,8 +14293,8 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 88 ],
-            "I3": [ 158 ],
+            "I2": [ 117 ],
+            "I3": [ 162 ],
             "O": [ 182 ]
           }
         },
@@ -13895,8 +14318,8 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 85 ],
-            "I3": [ 159 ],
+            "I2": [ 116 ],
+            "I3": [ 163 ],
             "O": [ 183 ]
           }
         },
@@ -13920,9 +14343,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 49 ],
-            "I3": [ 160 ],
-            "O": [ 184 ]
+            "I2": [ 64 ],
+            "I3": [ 69 ],
+            "O": [ 204 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_8": {
@@ -13945,9 +14368,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 110 ],
-            "I3": [ 162 ],
-            "O": [ 163 ]
+            "I2": [ 115 ],
+            "I3": [ 164 ],
+            "O": [ 184 ]
           }
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_9": {
@@ -13970,9 +14393,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 109 ],
-            "I3": [ 161 ],
-            "O": [ 164 ]
+            "I2": [ 114 ],
+            "I3": [ 166 ],
+            "O": [ 185 ]
           }
         }
       },
@@ -14009,7 +14432,7 @@
         },
         "enable_o": {
           "hide_name": 0,
-          "bits": [ 21 ],
+          "bits": [ 22 ],
           "attributes": {
             "src": "top.sv:14.11-14.19"
           }
@@ -14059,63 +14482,63 @@
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q_D": {
           "hide_name": 0,
-          "bits": [ 22, 25, 26, 27, 30, 31, 28, 29 ],
+          "bits": [ 23, 26, 27, 28, 31, 32, 29, 30 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "top.sv:51.18-64.4|lcd_controller.sv:37.5-216.12|lcd_controller.sv:0.0-0.0|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:578.19-578.22"
+            "src": "top.sv:51.18-64.4|lcd_controller.sv:37.5-231.12|lcd_controller.sv:0.0-0.0|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:578.19-578.22"
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I1": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3": {
           "hide_name": 0,
-          "bits": [ 36, 32, 37, 38 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_4_I3": {
-          "hide_name": 0,
-          "bits": [ 50, 38 ],
+          "bits": [ 44, 43 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6_I1": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O": {
           "hide_name": 0,
-          "bits": [ 51, 52, 53 ],
+          "bits": [ 39, 38, 40, 41 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6_I1_SB_LUT4_O_I3": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1": {
           "hide_name": 0,
-          "bits": [ 55, 56, 57 ],
+          "bits": [ 53, 54, 48, 55 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_6_I2": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O": {
           "hide_name": 0,
-          "bits": [ 51, 54, 53 ],
+          "bits": [ 63, 56, 50, 59 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_7_I3": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_I0": {
           "hide_name": 0,
-          "bits": [ 59, 60, 66, 64 ],
+          "bits": [ 57, 64, 53, 54 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_7_I3_SB_LUT4_O_1_I0": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_I0_SB_LUT4_I0_O": {
           "hide_name": 0,
-          "bits": [ 67, 60, 61, 59 ],
+          "bits": [ 39, 42 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_3_I3_SB_LUT4_I3_O_SB_LUT4_O_1_I1_SB_LUT4_I2_1_O_SB_LUT4_O_I0_SB_LUT4_I0_O_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 53, 54, 65, 66 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14123,7 +14546,31 @@
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 32, 33 ],
+          "bits": [ 138, 78, 35, 96 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0": {
+          "hide_name": 0,
+          "bits": [ 76, 77, 53, 54 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1": {
+          "hide_name": 0,
+          "bits": [ 58, 137 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I0_SB_LUT4_O_I1_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 86, 60, 85, 55 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14131,15 +14578,15 @@
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 43, 33 ],
+          "bits": [ 33, 34, 35, 36 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I2": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I0": {
           "hide_name": 0,
-          "bits": [ 55, 62, 71 ],
+          "bits": [ 87, 88, 39, 89 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14147,19 +14594,19 @@
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q_E": {
           "hide_name": 0,
-          "bits": [ 23 ],
+          "bits": [ 24 ],
           "attributes": {
           }
         },
         "lcd_ctrl.lcd_data_SB_DFFESS_Q_S": {
           "hide_name": 0,
-          "bits": [ 24 ],
+          "bits": [ 25 ],
           "attributes": {
           }
         },
-        "lcd_ctrl.lcd_data_SB_DFFESS_Q_S_SB_LUT4_O_I1": {
+        "lcd_ctrl.lcd_data_SB_DFFESS_Q_S_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 29, 39, 52, 53 ],
+          "bits": [ 37, 71, 94, 40 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14175,7 +14622,7 @@
         },
         "lcd_ctrl.lcd_enable": {
           "hide_name": 0,
-          "bits": [ 21 ],
+          "bits": [ 22 ],
           "attributes": {
             "hdlname": "lcd_ctrl lcd_enable",
             "src": "top.sv:51.18-64.4|lcd_controller.sv:18.24-18.34"
@@ -14183,143 +14630,31 @@
         },
         "lcd_ctrl.lcd_enable_SB_DFFE_Q_D": {
           "hide_name": 0,
-          "bits": [ 73, 74, 75 ],
+          "bits": [ 33, 75, 34, 96 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2": {
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0": {
           "hide_name": 0,
-          "bits": [ 80, 81 ],
+          "bits": [ 53, 54, 65 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_1_I3": {
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1_I0": {
           "hide_name": 0,
-          "bits": [ 90, 82, 48, 89 ],
+          "bits": [ 100, 101, 102, 103 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0": {
+        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I0_SB_LUT4_O_2_I2": {
           "hide_name": 0,
-          "bits": [ 82, 84, 71, 91 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_I0_O": {
-          "hide_name": 0,
-          "bits": [ 58, 42, 41 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I3": {
-          "hide_name": 0,
-          "bits": [ 68, 94 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I0_SB_LUT4_O_1_I3_SB_LUT4_I2_O": {
-          "hide_name": 0,
-          "bits": [ 47, 46, 49, 65 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1": {
-          "hide_name": 0,
-          "bits": [ 59, 60, 83, 72 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I1_O": {
-          "hide_name": 0,
-          "bits": [ 34, 63 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_I3": {
-          "hide_name": 0,
-          "bits": [ 59, 60, 72, 95 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O": {
-          "hide_name": 0,
-          "bits": [ 44, 45, 69, 70 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_2_I2": {
-          "hide_name": 0,
-          "bits": [ 59, 60, 97, 72 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_2_I2_SB_LUT4_I2_O": {
-          "hide_name": 0,
-          "bits": [ 83, 84, 77 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_I2_O_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 59, 60, 96, 72 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 93, 55, 56 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O": {
-          "hide_name": 0,
-          "bits": [ 59, 60, 98, 61 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_1_I0": {
-          "hide_name": 0,
-          "bits": [ 99, 100, 101, 102 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I1_O_SB_LUT4_O_2_I2": {
-          "hide_name": 0,
-          "bits": [ 119, 120 ],
+          "bits": [ 120, 121 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14327,55 +14662,7 @@
         },
         "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 77, 78, 79 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2": {
-          "hide_name": 0,
-          "bits": [ 57, 129, 92 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_I2_I3": {
-          "hide_name": 0,
-          "bits": [ 129, 130 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_I2_I3_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 131, 60, 72, 59 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I2_SB_LUT4_I2_O": {
-          "hide_name": 0,
-          "bits": [ 40, 41, 42, 35 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3": {
-          "hide_name": 0,
-          "bits": [ 68, 49, 92 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "lcd_ctrl.lcd_enable_SB_DFFE_Q_D_SB_LUT4_O_I2_SB_LUT4_O_1_I3_SB_LUT4_I1_I3": {
-          "hide_name": 0,
-          "bits": [ 92, 57, 132 ],
+          "bits": [ 53, 54, 98, 99 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14383,13 +14670,13 @@
         },
         "lcd_ctrl.lcd_enable_SB_DFFE_Q_E": {
           "hide_name": 0,
-          "bits": [ 76 ],
+          "bits": [ 97 ],
           "attributes": {
           }
         },
         "lcd_ctrl.lcd_enable_o": {
           "hide_name": 0,
-          "bits": [ 21 ],
+          "bits": [ 22 ],
           "attributes": {
             "hdlname": "lcd_ctrl lcd_enable_o",
             "src": "top.sv:51.18-64.4|lcd_controller.sv:15.16-15.28"
@@ -14397,15 +14684,229 @@
         },
         "lcd_ctrl.lcd_reset": {
           "hide_name": 0,
-          "bits": [ "0" ],
+          "bits": [ 21 ],
           "attributes": {
             "hdlname": "lcd_ctrl lcd_reset",
             "src": "top.sv:51.18-64.4|lcd_controller.sv:18.13-18.22"
           }
         },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D": {
+          "hide_name": 0,
+          "bits": [ 90, 91, 92, 93 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I0": {
+          "hide_name": 0,
+          "bits": [ 70, 135, 136, 34 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I0_SB_LUT4_O_I2": {
+          "hide_name": 0,
+          "bits": [ 137, 80 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1": {
+          "hide_name": 0,
+          "bits": [ 53, 54, 135, 61 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O": {
+          "hide_name": 0,
+          "bits": [ 72, 95, 74, 43 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1": {
+          "hide_name": 0,
+          "bits": [ 53, 54, 75, 61 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2": {
+          "hide_name": 0,
+          "bits": [ 64, 69, 137 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I1_O_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 88, 51, 49, 33 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_I3": {
+          "hide_name": 0,
+          "bits": [ 53, 54, 61 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 86, 49, 138 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O": {
+          "hide_name": 0,
+          "bits": [ 131, 132, 133, 134 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I0": {
+          "hide_name": 0,
+          "bits": [ 139, 53, 140, 141 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2": {
+          "hide_name": 0,
+          "bits": [ 51, 49, 140 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 45, 46, 47 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_1_I2_SB_LUT4_O_I2": {
+          "hide_name": 0,
+          "bits": [ 53, 54, 62, 65 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I0_O_SB_LUT4_O_2_I2": {
+          "hide_name": 0,
+          "bits": [ 142, 143 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 26, 73, 89 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 37, 71, 72 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I1_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_I2_O_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 45, 46, 47, 144 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2": {
+          "hide_name": 0,
+          "bits": [ 53, 54, 136, 65 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_I2_O": {
+          "hide_name": 0,
+          "bits": [ 44, 146, 78 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_I2_O_SB_LUT4_O_I2": {
+          "hide_name": 0,
+          "bits": [ 53, 54, 147, 64 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_1_I2_SB_LUT4_O_I3": {
+          "hide_name": 0,
+          "bits": [ 58, 65, 79 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_2_I1": {
+          "hide_name": 0,
+          "bits": [ 45, 148, 149, 52 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_2_I1_SB_LUT4_O_1_I3": {
+          "hide_name": 0,
+          "bits": [ 55, 85, 60, 145 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_D_SB_LUT4_O_3_I3": {
+          "hide_name": 0,
+          "bits": [ 39, 42, 72 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/opt/oss-cad-suite/lib/../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "lcd_ctrl.lcd_reset_SB_DFFE_Q_E": {
+          "hide_name": 0,
+          "bits": [ 130 ],
+          "attributes": {
+          }
+        },
         "lcd_ctrl.lcd_reset_o": {
           "hide_name": 0,
-          "bits": [ "0" ],
+          "bits": [ 21 ],
           "attributes": {
             "hdlname": "lcd_ctrl lcd_reset_o",
             "src": "top.sv:51.18-64.4|lcd_controller.sv:14.16-14.27"
@@ -14413,7 +14914,7 @@
         },
         "lcd_ctrl.step": {
           "hide_name": 0,
-          "bits": [ 56, 55, 68, 49, 85, 88, 86, 87, 121, 122, 123, 124, 115, 116, 125, 126, 127, 128, 111, 112, 113, 114, 117, 118, 103, 104, 105, 106, 107, 108, 109, 110 ],
+          "bits": [ 69, 64, 68, 67, 82, 81, 83, 84, 122, 123, 124, 125, 126, 127, 128, 129, 112, 113, 114, 115, 116, 117, 118, 119, 108, 109, 110, 111, 104, 105, 106, 107 ],
           "signed": 1,
           "attributes": {
             "hdlname": "lcd_ctrl step",
@@ -14422,7 +14923,7 @@
         },
         "lcd_ctrl.step_SB_DFF_Q_31_D": {
           "hide_name": 0,
-          "bits": [ 188, 55, 68, 49, 85, 88, 86, 87, 121, 122, 123, 124, 115, 116, 125, 126, 127, 128, 111, 112, 113, 114, 117, 118, 103, 104, 105, 106, 107, 108, 109, 110 ],
+          "bits": [ 205, 64, 68, 67, 82, 81, 83, 84, 122, 123, 124, 125, 126, 127, 128, 129, 112, 113, 114, 115, 116, 117, 118, 119, 108, 109, 110, 111, 104, 105, 106, 107 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "top.sv:51.18-64.4|lcd_controller.sv:33.13-33.21|/opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:33.23-33.24"
@@ -14430,7 +14931,7 @@
         },
         "lcd_ctrl.step_SB_DFF_Q_D": {
           "hide_name": 0,
-          "bits": [ 188, 187, 185, 184, 183, 182, 181, 180, 179, 178, 177, 176, 174, 173, 172, 171, 170, 169, 168, 167, 166, 165, 194, 193, 192, 191, 190, 189, 186, 175, 164, 163 ],
+          "bits": [ 205, 204, 202, 201, 200, 199, 198, 197, 196, 195, 194, 193, 191, 190, 189, 188, 187, 186, 185, 184, 183, 182, 211, 210, 209, 208, 207, 206, 203, 192, 181, 180 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "top.sv:51.18-64.4|lcd_controller.sv:33.13-33.21|/opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:33.26-33.27"
@@ -14438,7 +14939,7 @@
         },
         "lcd_ctrl.step_SB_DFF_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 56, 133, 160, 159, 158, 157, 148, 136, 134, 135, 156, 155, 154, 153, 152, 151, 150, 149, 147, 146, 145, 144, 143, 142, 141, 140, 139, 137, 138, 161, 162 ],
+          "bits": [ "0", 69, 150, 177, 176, 175, 174, 165, 153, 151, 152, 173, 172, 171, 170, 169, 168, 167, 166, 164, 163, 162, 161, 160, 159, 158, 157, 156, 154, 155, 178, 179 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "top.sv:51.18-64.4|lcd_controller.sv:33.13-33.21|/opt/oss-cad-suite/lib/../share/yosys/ice40/arith_map.v:51.21-51.22"
@@ -14461,7 +14962,7 @@
         },
         "reset_o": {
           "hide_name": 0,
-          "bits": [ "0" ],
+          "bits": [ 21 ],
           "attributes": {
             "src": "top.sv:13.11-13.18"
           }

@@ -77,7 +77,7 @@ VL_INLINE_OPT void Vtestbench___024root___nba_sequent__TOP__0(Vtestbench___024ro
                                                       == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
                                                       ? 0xe0U
                                                       : 0x80U))))));
-        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable 
+        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset 
             = ((0U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                | ((2U != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                   & ((3U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
@@ -87,31 +87,6 @@ VL_INLINE_OPT void Vtestbench___024root___nba_sequent__TOP__0(Vtestbench___024ro
                               & (7U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)))))));
     } else if (((((((((0xaU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                       | (0xbU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                     | (0xcU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                    | (0xdU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                   | (0xeU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                  | (0xfU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                 | (0x10U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                | (0x11U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step))) {
-        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data 
-            = ((0xaU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                ? 0x48U : ((0xbU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                            ? 0x48U : ((0xcU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                        ? 0x65U : (
-                                                   (0xdU 
-                                                    == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                                    ? 0x65U
-                                                    : 0x6cU))));
-        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable 
-            = ((0xaU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-               | ((0xbU != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                  & ((0xcU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                     | ((0xdU != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                        & ((0xeU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                           | ((0xfU != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                              & (0x10U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)))))));
-    } else if (((((((((0x12U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                      | (0x13U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
                      | (0x14U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
                     | (0x15U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
                    | (0x16U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
@@ -119,25 +94,23 @@ VL_INLINE_OPT void Vtestbench___024root___nba_sequent__TOP__0(Vtestbench___024ro
                  | (0x18U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
                 | (0x19U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step))) {
         vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data 
-            = ((0x12U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                ? 0x6fU : ((0x13U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                            ? 0x6fU : ((0x14U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                        ? 0x2cU : (
-                                                   (0x15U 
-                                                    == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                                    ? 0x2cU
-                                                    : 
-                                                   ((0x16U 
-                                                     == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                                     ? 0x20U
-                                                     : 
-                                                    ((0x17U 
-                                                      == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                                      ? 0x20U
-                                                      : 0x77U))))));
-        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable 
-            = ((0x12U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-               | ((0x13U != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+            = ((0xaU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                ? 1U : ((0xbU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                         ? 1U : ((0x14U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                  ? 0x48U : ((0x15U 
+                                              == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                              ? 0x48U
+                                              : ((0x16U 
+                                                  == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                                  ? 0x65U
+                                                  : 
+                                                 ((0x17U 
+                                                   == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                                   ? 0x65U
+                                                   : 0x6cU))))));
+        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset 
+            = ((0xaU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+               | ((0xbU != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                   & ((0x14U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                      | ((0x15U != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                         & ((0x16U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
@@ -153,22 +126,22 @@ VL_INLINE_OPT void Vtestbench___024root___nba_sequent__TOP__0(Vtestbench___024ro
                 | (0x21U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step))) {
         vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data 
             = ((0x1aU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                ? 0x6fU : ((0x1bU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                            ? 0x6fU : ((0x1cU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                        ? 0x72U : (
+                ? 0x6cU : ((0x1bU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                            ? 0x6cU : ((0x1cU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                        ? 0x6fU : (
                                                    (0x1dU 
                                                     == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                                    ? 0x72U
+                                                    ? 0x6fU
                                                     : 
                                                    ((0x1eU 
                                                      == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                                     ? 0x6cU
+                                                     ? 0x2cU
                                                      : 
                                                     ((0x1fU 
                                                       == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
-                                                      ? 0x6cU
-                                                      : 0x64U))))));
-        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable 
+                                                      ? 0x2cU
+                                                      : 0x20U))))));
+        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset 
             = ((0x1aU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                | ((0x1bU != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                   & ((0x1cU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
@@ -176,46 +149,88 @@ VL_INLINE_OPT void Vtestbench___024root___nba_sequent__TOP__0(Vtestbench___024ro
                         & ((0x1eU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                            | ((0x1fU != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
                               & (0x20U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)))))));
+    } else if (((((((((0x22U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                      | (0x23U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                     | (0x24U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                    | (0x25U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                   | (0x26U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                  | (0x27U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                 | (0x28U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                | (0x29U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step))) {
+        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data 
+            = ((0x22U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                ? 0x77U : ((0x23U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                            ? 0x77U : ((0x24U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                        ? 0x6fU : (
+                                                   (0x25U 
+                                                    == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                                    ? 0x6fU
+                                                    : 
+                                                   ((0x26U 
+                                                     == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                                     ? 0x72U
+                                                     : 
+                                                    ((0x27U 
+                                                      == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                                      ? 0x72U
+                                                      : 0x6cU))))));
+        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset 
+            = ((0x22U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+               | ((0x23U != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                  & ((0x24U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                     | ((0x25U != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                        & ((0x26U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                           | ((0x27U != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                              & (0x28U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)))))));
     } else {
         vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data 
-            = vlSelf->testbench__DOT__data_i;
-        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable 
-            = vlSelf->testbench__DOT__enable_i;
+            = ((0x2aU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                ? 0x64U : ((0x2bU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                            ? 0x64U : ((0x32U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)
+                                        ? 0U : (IData)(vlSelf->testbench__DOT__data_i))));
+        vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset 
+            = ((0x2aU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+               | ((0x2bU != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                  & ((0x32U != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                     & (IData)(vlSelf->testbench__DOT__reset_i))));
     }
-    vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset 
-        = ((~ ((((((((0U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                     | (2U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                    | (3U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                   | (4U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                  | (5U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                 | (6U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                | (7U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-               | (9U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step))) 
-           & ((~ ((((((((0xaU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                        | (0xbU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                       | (0xcU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                      | (0xdU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                     | (0xeU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                    | (0xfU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                   | (0x10U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                  | (0x11U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step))) 
-              & ((~ ((((((((0x12U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                           | (0x13U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                          | (0x14U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                         | (0x15U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                        | (0x16U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                       | (0x17U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                      | (0x18U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                     | (0x19U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step))) 
-                 & ((~ ((((((((0x1aU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
-                              | (0x1bU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                             | (0x1cU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                            | (0x1dU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                           | (0x1eU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                          | (0x1fU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                         | (0x20U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
-                        | (0x21U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step))) 
-                    & (IData)(vlSelf->testbench__DOT__reset_i)))));
+    vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_enable 
+        = (((((((((0U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                  | (2U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                 | (3U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                | (4U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+               | (5U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+              | (6U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+             | (7U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+            | (9U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+           | (((((((((0xaU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                     | (0xbU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                    | (0x14U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                   | (0x15U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                  | (0x16U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                 | (0x17U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                | (0x18U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+               | (0x19U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+              | (((((((((0x1aU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                        | (0x1bU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                       | (0x1cU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                      | (0x1dU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                     | (0x1eU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                    | (0x1fU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                   | (0x20U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                  | (0x21U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                 | (((((((((0x22U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                           | (0x23U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                          | (0x24U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                         | (0x25U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                        | (0x26U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                       | (0x27U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                      | (0x28U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                     | (0x29U == vlSelf->testbench__DOT__lcd_ctrl__DOT__step)) 
+                    | ((0x2aU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                       | ((0x2bU == vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                          | ((0x32U != vlSelf->testbench__DOT__lcd_ctrl__DOT__step) 
+                             & (IData)(vlSelf->testbench__DOT__enable_i))))))));
     vlSelf->testbench__DOT__lcd_ctrl__DOT__step = __Vdly__testbench__DOT__lcd_ctrl__DOT__step;
     vlSelf->testbench__DOT__data_i = vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_data;
     vlSelf->testbench__DOT__reset_i = vlSelf->testbench__DOT__lcd_ctrl__DOT__lcd_reset;
